@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Paul Schmitt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+		<link rel="icon" href="http://www.cs.princeton.edu/sites/all/themes/pucs_bootstrap/favicon.ico" type="image/vnd.microsoft.icon" />
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+            }
+            .sidebar-nav {
+            padding: 9px 0;
+            }
+        </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47412823-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-47412823-1');
+	</script>
+
+	<!-- Google Analytics -->
+	<!--<script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', 'UA-47412823-1', 'auto');
+	    ga('send', 'pageview');
+	</script>-->
+	<!-- End Google Analytics -->
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#pub">Publications</a></li>
+                        <!--<li><a href="index.html#research">Research</a></li>-->
+                        <li><a href="index.html#teaching">Teaching</a></li>
+                        <li><a href="docs/cv.pdf">CV</a></li>
+
+                    </ul>
+					<ul class="nav navbar-nav navbar-right">
+      					<li><img style="max-width:300px; margin-top: 10px;" src="images/PUsig1-size-web-300.jpg"/></li>
+    				</ul>
+                </div> 
+           </div>
+        </div>
+        <div class="container">
+        <div class="bs-docs-section">
+	
+            <div class="col-xs-12 col-md-3">
+                <div class="bs-component">
+                    <img src="images/paul_profile.jpg" width="190" height="190" />
+                </div>
+                <div class="bs-component">
+                    <h3>CONTACT</h3>
+                    <p>
+                        304 Sherrerd Hall<br>
+						Princeton, NJ 08540<br>
+                        Email: pschmitt [AT] cs.princeton.edu 
+                    </p>
+                    <p>
+                        <!--<a href="https://twitter.com/schmittpaul">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span></a>-->
+                        <a href="http://scholar.google.com/citations?user=Ra-ZgD8AAAAJ" class="btn btn-primary btn-sm">Google Scholar</a>
+                    </p>
+                </div>
+
+                <div class="bs-component">
+                    <!--<p>&nbsp;</p>-->
+                    <h3>NEWS</h3>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>27 Apr. 2018</strong><br>
+                        Our <a href="https://mitpress.mit.edu/books/digital-lifeline">book</a> that I co-wrote a chapter in was officially published. The multidisciplinary book outlines a research agenda for ICT-related research pertaining to refugees and displaced persons.  
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>10 Apr. 2018</strong><br>
+                        Our <a href="https://odns.cs.princeton.edu/">Oblivious DNS</a> concept is <a href="https://www.schneier.com/blog/archives/2018/04/oblivious_dns.html">getting</a> <a href="https://www.theregister.co.uk/2018/04/10/oblivious_dns/">some</a> <a href="https://www.techrepublic.com/article/oblivious-dns-could-protect-your-internet-traffic-against-snooping/">coverage</a>.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>13 Mar. 2018</strong><br>
+                        I'm presenting our initial findings for correlating network performance with video quality of experience at the <a href="https://www.caida.org/workshops/aims/1803/">AIMS</a> workshop.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>9 Mar. 2018</strong><br>
+                        I'm presenting our concept for providing practical privacy for DNS to <a href="https://indico.dns-oarc.net/event/28/">OARC 28</a> in San Juan, PR.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>27 Nov. 2017</strong><br>
+                        Our paper on AirVIEW, a system that enables unsupervised transmitter detection in raw spectrum was accepted to <a href="http://infocom2018.ieee-infocom.org/">IEEE Infocom 2018</a>.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>15 Aug. 2017</strong><br>
+                        Excited to join CITP as a postdoctoral research associate!
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>13 Jul. 2017</strong><br>
+                        I defended my PhD. Thanks to my committee members for all of you support and wisdom!
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>1 Apr. 2017</strong><br>
+                        Our paper discussing fundamental limitations facing wireless networks was accepted to the Workshop on Computing within Limits <a href="http://acmlimits.org/2017/">(LIMITS '17)</a>.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>13 Jan. 2017</strong><br>
+                        I gave a guest talk at Princeton's Center for Information Technology Policy <a href="https://citp.princeton.edu/">(CITP)</a> about my work on mobile networks in refugee camps. Thanks to Nick Feamster for hosting me and to everyone that showed up for an interesting discussion!
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>22 Dec. 2016</strong><br>
+                        Our <a href="docs/itid-bandwidth.pdf">ITID journal article</a> about a bandwidth upgrade in a rural Zambian network that led to worse user performance was highlighted in <a href="http://www.ictworks.org/2016/12/22/a-ruined-christmas-when-more-bandwidth-led-to-worse-user-experiences/">ICTworks</a>.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>11 Dec. 2016</strong><br>
+                        We've made our paper on Rangzen, a system for enabling anonymous communication between users in situations where network-level attacks are occuring, available on arXiv.
+                    </p>
+			<p><i class="fa fa-chevron-right"></i>
+                        <strong>5 Dec. 2016</strong><br>
+                        I completed my PhD proposal. Thanks to my committee members!
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>9 Sept. 2016</strong><br>
+                        Our paper on automation of wireless network planning was accepted to HotNets 2016.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>19 Jun. 2016</strong><br>
+                        I'm spending the summer working as an intern at ICSI in Berkeley. We are working on a protocol to enable multipath for WISP networks.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>20 May 2016</strong><br>
+                        Our paper on PhoneHome, a system that allows for third-party extension of cellular networks was accepted to ICCCN 2016.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>20 Apr. 2016</strong><br>
+                        I was awarded a UCSB President’s Dissertation Year Fellowship for 2016-17.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>16 Apr. 2016</strong><br>
+                        Our paper exploring the future of communications infrastructure in resource-poor environments was accepted to LIMITS '16.
+                    </p>
+	     	    <p><i class="fa fa-chevron-right"></i>
+                        <strong>13 Apr. 2016</strong><br>
+                        Our paper describing SmartCell, and application that provides cellular congestion awareness to users was accepted to the IEEE Communications Magazine special issue on Wireless Technologies for Development.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>15 Feb. 2016</strong><br>
+                        Our poster describing our system for scalable spectrum inventory was accepted to NSDI 2016.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>15 Jan. 2016</strong><br>
+                        Our work identifying community-level divides within a refugee camp was accepted to ICTD 2016.
+                    </p>
+		    <!--<p><i class="fa fa-chevron-right"></i>
+                        <strong>18 Dec. 2015</strong><br>
+                        Our paper investigating layer-3 characteristics of MVNO networks was accepted to PAM 2016.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>27 Nov. 2015</strong><br>
+                        Our HybridCell system paper on dynamically augmenting poorly operating commercial networks with local networks was accepted to Infocom 2016.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>19 Oct. 2015</strong><br>
+                        Our final technical report on mobile phone and Internet use in the Za'atari refugee camp was submitted to UNHCR.
+                    </p>
+                    <p><i class="fa fa-chevron-right"></i>
+                        <strong>8 Sep. 2015</strong><br>
+                        My paper on media upload caching was accepted to ACM DEV 2015.
+                    </p>
+                    <p><i class="fa fa-chevron-right"></i>
+                        <strong>16 Jul. 2015</strong><br>
+                        I was quoted in an Al Jazeera America <a href="http://america.aljazeera.com/articles/2015/7/16/internet-access-zaatari-camp.html">article</a> talking about connectivity in the Zaatari refugee camp.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>10 Jun. 2015</strong><br>
+                        Our ITID <a href="http://itidjournal.org/index.php/itid/article/view/1394">article</a> was published today.
+                    </p>
+
+                    <p><i class="fa fa-chevron-right"></i>
+                        <strong>4 May. 2015</strong><br>
+                        I was featured in a <a href="http://www.stthomas.edu/news/qa-paul-schmitt-b-09-m-s-11/">Q & A</a> in the college of arts and sciences spotlight magazine at St. Thomas.
+                    </p>
+                    <p><i class="fa fa-chevron-right"></i>
+                        <strong>17 Mar. 2015</strong><br>
+                        Futurity.org published a <a href="http://www.futurity.org/syrian-refugees-cellular-signal-877142/">story</a> about our recent research trip to Jordan.
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>24 Mar. 2015</strong><br>
+                        I completed my major area exam. Thanks to my committee!
+                    </p>
+		    <p><i class="fa fa-chevron-right"></i>
+                        <strong>16 Mar. 2015</strong><br>
+                        The <a href="http://www.news.ucsb.edu/2015/015232/dispatches-edge">UCSB Current</a> covered our work in Zaatari.
+                    </p>
+                    <p><i class="fa fa-chevron-right"></i>
+                        <strong>29 Jan. 2015</strong><br>
+                        I just returned from two back-to-back research trips. I was in a refugee camp in Jordan near the Syrian border to explore connectivity for residents of the camp and went to Guatemala to research mobile data network performance.
+                    </p>-->
+		    
+                    <!--<h3>LINKS</h3>
+                    <p><i class="fa fa-chevron-right"></i>
+                        Moment Lab <a href="http://moment.cs.ucsb.edu/">Website</a>
+                        <br \>
+                        <i class="fa fa-chevron-right"></i> 
+                        Job Search: <a href="http://jobs.acm.org/jobseeker/search/results/">CACM</a>, 
+                        <a href="http://cra.org/ads/#s=1">CRA</a>, <a href="http://www.computeroxy.com/">Computeroxy</a>
+                    </p>-->
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <div class="bs-component">
+                    <h2>Paul Schmitt</h2>
+                    <p>My research interests span the areas of wireless network systems design, and network measurement and performance analysis. A common thread in my research is in-depth characterization of real-world connectivity in resource-limited environments, and the use of this analysis to subsequently inform system designs. Through comprehensive analysis across all tiers of real-world telecommunications infrastructure, my research produces solutions that solve fundamental connectivity problems, and in particular those that that manifest in challenging network environments.
+<!--My research interests span the areas of wireless network systems design, performance analysis, and information and communication technologies for development. A common thread in my research is in-depth characterization of real-world connectivity in challenging environments, which subsequently informs system designs. Through comprehensive analysis across all tiers of real-world telecommunications infrastructure, my research produces systems designed to solve practical problems.
+I'm a CS PhD candidate. My research focus is on mobile network connectivity, problems related to dynamic spectrum and spectrum sensing, and connectivity in under-resourced areas. Prior to joining UCSB I worked as a network administrator for the University of St. Thomas in St. Paul, MN and Blue Earth County in Mankato, MN.-->
+                    </p>
+                    <p>I'm a postdoctoral research associate at the <a href="https://citp.princeton.edu">Center for Information Technology Policy</a> (CITP) at Princeton University and I work with <a href="https://www.cs.princeton.edu/~feamster/">Prof. Nick Feamster</a>. I previously completed my Ph.D. as a member of the <a href=
+                        "http://moment.cs.ucsb.edu/">MOMENT</a> lab at UCSB under the
+                        supervision of <a href=
+                            "http://www.cs.ucsb.edu/~ebelding/Home.html">Prof. Elizabeth
+                        Belding</a>.
+                    </p>
+				<!--	<p>I am on the job market for a tenure-track faculty position. Here is my <a href="docs/cv.pdf">Curriculum Vitae</a>, <a href="docs/res.pdf">Research Statement</a>, and <a href="docs/tea.pdf">Teaching Statement</a>.</p> -->
+                </div>
+                <div class="page-header" name="pub" id="pub">
+                </div>
+                <div class="bs-component"></a>
+                    <h3>PUBLICATIONS</h3>
+                    <!--<p>&nbsp;</p>-->
+                    <ul>
+			<li>
+                            <p><strong>Oblivious DNS: Practical Privacy for DNS Queries</a></strong> <br />
+                                <strong>Paul Schmitt</strong>, Anne Edmundson, Allison Mankin, Nick Feamster<br />
+                                to appear in Privacy Enhancing Technologies Symposium <em><strong>(PETS)</strong></em></br>
+				Stockholm, Sweden, July 2019</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>Third-Party Cellular Congestion Detection and Augmentation</a></strong> <a href="docs/tmc2019.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, Mariya Zheleva, Elizabeth Belding<br />
+                                <em><strong>IEEE Transactions on Mobile Computing</strong></em></br>
+				January 2019</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>Enhancing Transparency: Internet Video Quality Inference from Network Traffic</a></strong> <a href="docs/TPRC_Net.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Francesco Bronzino, Renata Teixeira, Tithi Chattopadhyay, Nick Feamster<br />
+                                Research Conference on Communications, Information and Internet Policy <em><strong>(TPRC)</strong></em></br>
+				Washington DC, September 2018</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>A Cellular Network Radio Access Performance Measurement System: 
+</br>Results from a Ugandan Refugee Settlements Field Trial</a></strong> <a href="docs/TPRC_Uganda.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Carleen Maitland, Richard Caneba, <strong>Paul Schmitt</strong>, Tom Koutsky<br />
+                                Research Conference on Communications, Information and Internet Policy <em><strong>(TPRC)</strong></em></br>
+				Washington DC, September 2018</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>AirPress: High-accuracy Spectrum Summarization Using Compressed Scans</a></strong><br />
+                                Mariya Zheleva, Timothy Larock, <strong>Paul Schmitt</strong>, Petko Bogdanov<br />
+                                <em><strong>IEEE DySPAN 2018</strong></em></br>
+				Seoul, South Korea, October 2018</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>Cellular and Internet Connectivity for Displaced Populations</a></strong> <a href="https://mitpress.mit.edu/books/digital-lifeline" target="_blank" class="btn btn-primary btn-xs">WEB</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, Elizabeth Belding, Mariya Zheleva<br />
+                                <em>book chapter in Digital Lifeline? ICTs for Refugees and Displaced Persons</em></br>
+                                 MIT Press, 2018</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>AirVIEW: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing</a></strong> <a href="docs/infocom2018.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Mariya Zheleva, Petko Bogdanov, Timothy Larock, <strong>Paul Schmitt</strong><br />
+                                <em><strong>IEEE Infocom 2018</strong></em></br>
+                                 Honolulu, HI, April 2018</br>
+                            </p>
+                        </li>
+<li>
+                            <p><strong>Network Measurement and Systems for Resource-Constrained Environments</a></strong> <a href="docs/Network_Measurement_and_System.pdf" class="btn btn-primary btn-xs">PDF</a> <a href="https://search.proquest.com/docview/1990606858/" target="_blank" class="btn btn-primary btn-xs">WEB</a><br />
+                                <strong>Paul Schmitt</strong><br />
+                                <em>PhD Dissertation</em></br>
+                                 University of California, Santa Barbara, September 2017</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>Low On Air: Inherent Wireless Channel Capacity Limitations</a></strong> <a href="docs/limits02-schmittA.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Elizabeth Belding<br />
+                                <em>Third Workshop on Computing within Limits <strong>(LIMITS 2017)</strong></em></br>
+                                 Santa Barbara, CA, June 2017</br>
+                            </p>
+                        </li>
+						<li>
+                            <p><strong>Rangzen: Anonymously Getting the Word Out in a Blackout</a></strong> <a href="docs/rangzen.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Adam Lerner, Giulia Fanti, Yahel Ben-David, Jesus Garcia, <strong>Paul Schmitt</strong>, Barath Raghavan<br />
+                                <em>arXiv:1612.03371 [cs.NI]</em></br>
+                                 December 2016</br>
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Helping the Lone Operator in the Vast Frontier</a></strong> <a href="docs/hotnets_planning.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Thomas Pötsch, <strong>Paul Schmitt</strong>, Jay Chen, Barath Raghavan<br />
+                                <em>Fifteenth ACM Workshop on Hot Topics in Networks <strong>(HotNets 2016)</strong></em></br>
+                                 Atlanta, GA, November 2016</br>
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>PhoneHome: Robust Extension of Cellular Coverage</a></strong> <a href="docs/icccn_phonehome.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, Elizabeth Belding, and Mariya Zheleva<br />
+                                <em>International Conference on Computer Communication and Networks <strong>(ICCCN 2016)</strong></em></br>
+                                 Waikoloa, HI, August 2016</br>
+                            </p>
+                        </li>
+                        <li>
+			    <p><strong>SmartCell: Small-Scale Mobile Congestion Awareness</a></strong> <a href="docs/commsmag_smartcell.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, and Elizabeth Belding<br />
+                                <em><strong>IEEE Communications Magazine</strong></em></br>
+                                 July 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>Navigating Connectivity in Reduced Infrastructure Environments</a></strong> <a href="docs/limits_2016.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong> and Elizabeth Belding<br />
+                                <em>Second Workshop on Computing within Limits <strong>(LIMITS 2016)</strong></em></br>
+                                 Irvine, CA, June 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>Community-Level Access Divides: A Refugee Camp Case Study</a></strong> <a href="docs/ictd16_communitydivides.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, Elizabeth Belding, Brian Tomaszewski, Ying Xu, and Carleen Maitland<br />
+                                <em>International Conference on Information and Communications Technology and Development <strong>(ICTD)</strong></em></br>
+                                 Ann Arbor, MI, June 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>HybridCell: Cellular connectivity on the fringes with demand-driven local cells</a></strong> <a href="docs/hybridcell_infocom16.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Daniel Iland, Mariya Zheleva, Elizabeth Belding<br />
+                                <em><strong>IEEE Infocom 2016</strong></em></br>
+                                 San Francisco, CA, April 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>A Study of MVNO Data Paths and Performance</a></strong> <a href="docs/pam16-mvno.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Morgan Vigil, Elizabeth Belding<br />
+                                <em>Passive and Active Measurements Conference <strong>(PAM)</strong></em></br>
+                                 Heraklion, Crete, Greece, March 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>AirPress: Towards Scalable Spectrum Inventory (Poster)</a></strong> <a href="docs/airpress_nsdi16.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Timothy Larock, <strong>Paul Schmitt</strong>, Petko Bogdanov, Elizabeth Belding, Mariya Zheleva<br />
+                                <em>Networked Systems Design and Implementation <strong>(NSDI)</strong></em></br>
+                                 Santa Clara, CA, March 2016</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>Internet Media Upload Caching for Poorly-Connected Regions</a></strong> <a href="docs/dev_villagecache.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                <strong>Paul Schmitt</strong>, Ramya Raghavendra, Elizabeth Belding<br /> 
+                                <em>ACM DEV 2015 <strong>(DEV-6)</strong></em></br>
+                                 London, United Kingdom, December 2015</br>
+                            </p>
+			</li>
+			<li>
+			    <p><strong>Youth Mobile Phone and Internet Use January 2015 Za’atari Camp, Mafraq, Jordan</a></strong> <a href="docs/zaatari_tech.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Carleen Maitland, Brian Tomaszewski, Elizabeth Belding, Karen Fisher, Ying Xu, Danny
+Iland, <strong>Paul Schmitt</strong>, Amira Majid <br /> 
+                                <em>Tech. report prepared for UNHCR <strong>(Tech. Rep.)</strong></em></br>
+                                Penn State Univ., State College, PA, October 19 2015 </br>
+                            </p>
+			</li>
+			<li>
+                            <p><strong>Internet Bandwidth Upgrade: Implications on Performance and Usage in Rural Zambia</a></strong> <a href="docs/itid-bandwidth.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Mariya Zheleva, <strong>Paul Schmitt</strong>, Morgan Vigil, Elizabeth Belding<br /> 
+                                <em>Information Technologies and International Development Journal <strong>(ITID)</strong></em></br>
+                                Vol 11, Issue 2 Summer 2015 </br>
+                            </p>
+                        </li>
+			<li>
+			    <p><strong>NosyNeighbor: Augmenting Post-Disaster Cellular Service with Local Cellular Networks (Poster)</a></strong> <a href="docs/nosyneighbor.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Daniel Iland, Mariya Zheleva, <strong>Paul Schmitt</strong>, Elizabeth Belding<br />
+                                <em>Sixteenth Workshop on Mobile Computing Systems and Applications <strong>(ACM HotMobile 2015)</strong></em></br>
+                                 Santa Fe, NM, February 2015</br>
+                            </p>
+			</li>
+                        <li>
+                            <p><strong>The Increased Bandwidth Fallacy: Performance and Usage in Rural Zambia</strong> <a href="docs/dev13-increased-bw-fallacy.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Mariya Zheleva, <strong>Paul Schmitt</strong>, Morgan Vigil, Elizabeth Belding </br>
+                                <em>ACM DEV <strong>(DEV-4)</strong></em></br>
+                                Cape Town, South Africa, December 2013 </br>
+                        </li>
+                        <li>
+                            <p><strong>Bringing visibility to rural users in Côte d'Ivoire</strong> <a href="docs/ictd13-rural-cellular-users.pdf" class="btn btn-primary btn-xs">PDF</a><br />
+                                Mariya Zheleva, <strong>Paul Schmitt</strong>, Morgan Vigil, Elizabeth Belding </br>
+                                <em>International Conference on Information and Communications Technology and Development <strong>(ICTD)</strong></em></br> 
+                                Cape Town, South Africa, December 2013 </br>
+                        </li>
+                        <li>
+                            <p><strong>Community detection in cellular network traces</strong> <a href="docs/ictd13-comm-detect.pdf" class="btn btn-primary btn-xs">PDF</a></br>
+                                Mariya Zheleva, <strong>Paul Schmitt</strong>, Morgan Vigil, Elizabeth Belding </br>
+                                <em>International Conference on Information and Communications Technology and Development <strong>(ICTD)</strong></em></br> 
+                                Cape Town, South Africa, December 2013 </br>
+                        </li>
+                        <li>
+                            <p><strong>Communication flow patterns in the Orange Telecom D4D dataset</strong> <a href="docs/d4d_ucsb_updated.pdf" class="btn btn-primary btn-xs">PDF</a></br>
+                                <strong>Paul Schmitt</strong>, Morgan Vigil, Mariya Zheleva, Elizabeth Belding </br>
+                                <em> NetMob </em>
+                                Boston, MA, May 2013 </br>
+                        </li>
+                    </ul>
+                </div>
+		<!--<div class="page-header" name="research" id="research" >
+                </div>
+                <div class="bs-component" >
+                    <h3>RESEARCH</h3>
+                    <ul>
+		<li><p><strong>WISPR:</strong>&nbsp;We design new network protocols that enable multipath over low-cost, heterogenous wireless links that have dynamic capacities and loss rates. We explore the idea of WISPR (Wireless Internet Service Providers with Redundancy), which is analagous to RAID, where we can explore functonality tradeoffs depending on desired outcome (e.g. network flow redundancy or resiliency to packet loss). 
+                        </p>
+		<li><p><strong>AirPress:</strong>&nbsp;We study techniques to efficiently represent spectrum occupancy information with the goal of creating a scalable global spectrum inventory that can be used for new spectrum sharing models such as licensed shared access and authorized shared access (LSA/ASA). We leverage wavelet decomposition and explore the ability to detect transmitters near the noise floor in a single-pass system while operating in the coefficient (compressed) domain. 
+                        </p>
+		<li><p><strong>Cellular congestion detection</strong>&nbsp;We created a system and algorithm for passive detection and characterization of cellular base station radio congestion. Counducted a measurement campaign comparing congestion in the United States, rural Guatemala, and a large refugee camp in Jordan. Findings of extreme congestion at the base station level in refugee camp allowed local organizations to approach carriers to find solutions.
+		</p>
+			<li><p><strong>Community-scale digital divides:</strong>&nbsp;We explore community-level physical access divides in the context of an active Syrian refugee camp. Our work illuminates digital divides at a local level and explores factors influencing their creation and potential solutions. 
+			</p>
+			<li><p><strong>HybridCell:</strong>&nbsp;HybridCell allows coexistence and simultaneous use of commercial and locally-owned cellular networks. HybridCell monitors nearby commercial cellular networks and dynamically adjusts local network usage based on the "health" of the commercial network.
+                        </p>
+			<li><p><strong>Mobile data network performance analysis:</strong>&nbsp;We study performance and behaviors for traffic on mobile network operator (MNO) and mobile virtual network operator (MVNO) networks. We find that poor performance of MVNOs may be attributable to inefficient network topologies, lack of peering arrangements, and longer IP paths relative to the underlying carrier.
+                        </p>
+                        <li><p><strong>VillageCache:</strong>&nbsp;Previous work has
+                            observed strong locality of interest in content produced in
+                            rural networks. Videos and photos uploaded from a particular network are
+                            very likely to be consumed by other users in the same
+                            network. We engineer VillageCache to take advantage of this
+                            fact. User videos and photos that are uploaded to YouTube and Facebook are
+                            automatically stored in the local network and transparently
+                            redilivered in full quality to other local users. We also
+                            time-shift uploads to YouTube in order to better utilize
+                            network bandwidth. The system allows for users in a bandwidth
+                            constrained environment to experience media at their
+                            intended quality without the use of outside software while avoiding the use of costly bandwidth.
+                        </p>
+                        <li><p><strong>VillageCell:</strong>&nbsp;We deployed
+                            VillageCell, a local GSM network that provides basic voice
+                            and SMS functionality in a rural village in Zambia. The
+                            system allows users to use their existing handsets with just
+                            a SIM card replacement.
+                        </p>
+                        <li><p><strong>VillageShare:</strong>&nbsp;Users on networks in
+                            developing regions are often only consumers of Internet
+                            content rather than also being producers. Additionally,
+                            traditional Internet-based sharing of resources means content
+                            traverses constrained links twice (e.g. a user uploads a
+                            video to YouTube and their friend in the same village that
+                            wants to watch it must download the video from YouTube). We
+                            design VillageShare to allow for local content to be stored
+                            locally, with the system providing the ability for local
+                            sharing of content as well. Should the users choose, the
+                            system can upload their content to Internet services in an
+                            intelligent way using time-shifting or bandwidth sharing
+                            techniques.
+                        </p>
+                        <li><p><strong>Call Detail Record Analysis:</strong>&nbsp;We
+                            analyze large-scale network traces from a cellular carrier in
+                            C&Atilde;&acute;te d'Ivoire in order to further understand
+                            user behavior. We find distinct usage differences between
+                            calls originating from rural antennas versus urban antennas.
+                            Particularly, we find high locality of interest in rural
+                            networks. Roughly 70% of rural calls are sourced from and
+                            destined for the same cell antenna. This leads us to conclude
+                            that local solutions can provide great benefit to rural
+                            communities even if they are not connected to the public
+                            network.
+                        </p>
+                        <li><p><strong>mPERRLA:</strong>&nbsp;We developed mPERRLA, a
+                            mobile health application that assesses pupillary response
+                            using the smartphone camera and flash and OpenCV image
+                            processing. mPERRLA extends the coverage of point-of-care
+                            health examinations through deployment on a ubiquitous
+                            technology making point-of-care diagnostics possible in
+                            remote emergency situations. The application is designed to
+                            be usable by individuals with no prior healthcare
+                            experience.
+                        </p>
+                        <li><p><strong>MAC layer power savings for a single-hop wireless
+                            backhaul link:</strong>&nbsp;Rural area networks, such as
+                            <a href=
+                                "http://moment.cs.ucsb.edu/?q=content/villagenet">VillageNet</a>,
+                            often utilize 802.11 for its versatility and low financial
+                            overhead. VillageNet is composed of a single-hop wireless
+                            network using 802.11 infrastructure mode that stretches over
+                            a distance of 3km. Due to harsh environments and unstable
+                            networks, traditional energy sources offer limited viability
+                            for powering these rural area networks. A common solution
+                            uses car batteries to power rural area networks, making
+                            energy efficiency an important factor for the success these
+                            remote systems. Given traffic patterns for the wireless
+                            backhaul in a VillageNet deployment in rural Zambia, we seek
+                            to determine which wireless standard and power management
+                            scheme provides the highest level of energy efficiency for
+                            this battery-powered link. We simulate and evaluate 802.11
+                            with and without Power Save Mode, 802.11 TDMA, and WiMAX
+                            based on their energy usage in order to recommend a MAC
+                            protocol and infer potential power savings.
+                        </p>
+                    </ul>
+                </div>-->
+		<div class="page-header" name="teaching" id="teaching">
+                </div>
+                <div class="bs-component">
+                    <h3>TEACHING</h3>
+                    <!--<p>&nbsp;</p>-->
+                    <ul>
+                        <li>
+                            <p><strong>Spring 2013: CS 32 - Object Oriented Design and
+                                Implementation</strong></br>
+                                I was a teaching assistant for Mike Costanzo's <a href=
+                                    "http://www.cs.ucsb.edu/~mikec/cs32/priorclasses/spring2013/index.html">
+                                OO</a> course.<br>
+                            </p>
+                        <li>
+                            <p>
+                                <strong>Winter 2013: CS 176b - Network Programming</strong></br>
+                                I was a teaching assistant for Prof. Ben Zhao's <a href=
+                                    "http://www.cs.ucsb.edu/~ravenben/classes/176B-W13/">Network
+                                Computing</a> course at UCSB.<br>
+                                <!--      
+                                    &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/discussion1.tar.gz">Discussion
+                                         Week 1</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/discussion2.tar.gz">Discussion
+                                         Week 2</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/discussion4.tar.gz">Discussion
+                                         Week 4</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/discussion5.tar.gz">Discussion
+                                         Week 5</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/discussion7.tar.gz">Discussion
+                                         Week 7</a><br>
+                                         <br>
+                                         <b>Useful Links</b><br>
+                                         &bull; <a href=
+                                         "http://developer.android.com/guide/topics/resources/index.html">
+                                         Android API guide</a><br>
+                                         &bull; <a href=
+                                         "http://twitter4j.org/javadoc/index.html">Twitter4j
+                                         JavaDoc</a><br>
+                                         &bull; <a href=
+                                         "https://github.com/yusuke/twitter4j/tree/master/twitter4j-examples/src/main/java/twitter4j/examples">
+                                         Twitter4j example code</a><br>
+                                         &bull; <a href="http://beej.us/guide/bgnet/">Beej's Guide to
+                                         Network Programming</a><br>
+                                         &bull; <a href=
+                                         "https://computing.llnl.gov/tutorials/pthreads/">POSIX
+                                         Threads Programming tutorial from Lawrence Livermore National
+                                         Laboratory</a><br>
+                                         &bull; <a href=
+                                         "http://www.ibm.com/developerworks/linux/library/l-sockpit/index.html">
+                                         Five pitfalls of Linux sockets programming - common problems
+                                         you likely will experience</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/iseries.pcap">A
+                                         sample FTP packet capture (uses PASV) - you can open it in
+                                         Wireshark or something similar to see the back-and-forth
+                                         [right-click &amp; save link as]</a><br>
+                                         &bull; <a href=
+                                         "http://www.cs.ucsb.edu/~pschmitt/CS176B/activeftp.pcap">A
+                                         sample active FTP packet capture (uses PORT) - you can open
+                                         it in Wireshark or something similar to see the
+                                         back-and-forth [right-click &amp; save link as]</a><br>
+                                         &bull; <a href=
+                                         "http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html">
+                                         YoLinux pthreads tutorial</a><br>
+                                         &bull; <a href=
+                                         "http://www.yolinux.com/TUTORIALS/Sockets.html">YoLinux C
+                                         sockets tutorial</a><br></p> -->
+                        <li>
+                            <p><strong>Fall 2012: CS 32 - Object Oriented Design and
+                                Implementation</strong></br>
+                                I was a teaching assistant for Mike Costanzo's <a href=
+                                    "http://www.cs.ucsb.edu/~mikec/cs32/priorclasses/fall2012/index.html">
+                                OO</a> course.<br>
+                            </p>
+                        <li>
+                            <p><strong>Spring 2012: CISC 370 - Computer Networking</strong></br>
+                                I was an adjunct lecturer for the undergraduate networking
+                                course at the <a href="http://stthomas.edu">University of St.
+                                Thomas</a>.<br>
+                            </p>
+                        <li>
+                            <p><strong>Fall 2011: CISC 310 - Operating Systems</strong></br>
+                                I was an adjunct lecturer for the undergraduate operating
+                                systems course at the <a href=
+                                    "http://stthomas.edu">University of St. Thomas</a>.<br>
+                            </p>
+                    </ul>
+
+            </div>
+            <div class="page-header"></div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>© Paul Schmitt 2017, CSS by Thomas Park</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!--container-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    </body>
+</html>
