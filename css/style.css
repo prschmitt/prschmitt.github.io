@@ -15,7 +15,7 @@ a:hover { color: #8C1515; text-decoration:underline; }
 
 h1 {
 	font-family: 'Noto Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	font-size:50px;
 	margin-bottom: 15px;
 	margin-top: 10px;
@@ -38,8 +38,8 @@ h3 {
 
 h4 {
 	font-family: 'Noto Sans', sans-serif;
-	font-weight: 700;
-	font-size: 28px;
+	font-weight: 400;
+	font-size: 32px;
 	margin-bottom: 10px;
 }
 
