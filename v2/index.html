@@ -127,13 +127,23 @@
             align-items: center;
             justify-content: center;
             color: var(--text-secondary);
-            transition: color 0.25s ease;
-            font-size: 1.2rem;
-            line-height: 1;
+            transition: color 0.25s ease, transform 0.25s ease;
+            width: 24px;
+            height: 24px;
         }
 
         .theme-toggle:hover {
             color: var(--accent);
+        }
+
+        .theme-toggle:active {
+            transform: scale(0.95);
+        }
+
+        .theme-icon {
+            width: 22px;
+            height: 22px;
+            stroke: currentColor;
         }
 
         main {
@@ -190,6 +200,37 @@
 
         .hero-content .contact a:hover {
             text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            background: var(--light-bg);
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            color: var(--secondary);
+        }
+
+        .social-icon {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
         }
 
         .hero-links {
@@ -488,7 +529,7 @@
                 <li><a href="#preprints">Preprints</a></li>
                 <li><a href="#teaching">Teaching</a></li>
                 <li><a href="../docs/cv.pdf">CV</a></li>
-                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀️</button></li>
+                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button></li>
             </ul>
         </nav>
     </header>
@@ -506,7 +547,8 @@
                     <a href="#publications">Publications</a> •
                     <a href="#preprints">Preprints</a> •
                     <a href="#teaching">Teaching</a> •
-                    <a href="../docs/cv.pdf">CV</a>
+                    <a href="../docs/cv.pdf">CV</a> •
+                    <a href="https://scholar.google.com/citations?user=Ra-ZgD8AAAAJ&hl=en">Scholar</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -572,17 +614,19 @@
         function setTheme(theme) {
             const html = document.documentElement;
             const toggle = document.getElementById('theme-toggle');
+            const sunIcon = '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+            const moonIcon = '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
 
             if (theme === 'dark') {
                 html.classList.add('dark-mode');
                 html.classList.remove('light-mode');
-                toggle.textContent = '🌙';
+                toggle.innerHTML = moonIcon;
                 toggle.setAttribute('aria-label', 'Switch to light mode');
                 localStorage.setItem('theme', 'dark');
             } else {
                 html.classList.add('light-mode');
                 html.classList.remove('dark-mode');
-                toggle.textContent = '☀️';
+                toggle.innerHTML = sunIcon;
                 toggle.setAttribute('aria-label', 'Switch to dark mode');
                 localStorage.setItem('theme', 'light');
             }
