@@ -66,7 +66,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             scroll-behavior: smooth;
-            scroll-padding-top: 100px;
+            scroll-padding-top: 120px;
         }
 
         header {
@@ -167,7 +167,7 @@
             margin-bottom: 0.75rem;
             line-height: 1.1;
             word-break: break-word;
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: -0.5px;
         }
 
@@ -342,6 +342,126 @@
             color: var(--text-secondary);
             font-style: italic;
             word-break: break-word;
+        }
+
+        .pub-links {
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .pub-link,
+        .bibtex-btn {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+
+        .pub-link:hover {
+            text-decoration: underline;
+        }
+
+        .bibtex-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font: inherit;
+            transition: text-decoration 0.2s ease;
+        }
+
+        .bibtex-btn:hover {
+            text-decoration: underline;
+        }
+
+        .bibtex-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bibtex-modal.active {
+            display: flex;
+        }
+
+        .bibtex-modal-content {
+            background: var(--secondary);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .bibtex-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .bibtex-modal-header h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .bibtex-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bibtex-close:hover {
+            color: var(--text);
+        }
+
+        .bibtex-text {
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1rem;
+            font-family: monospace;
+            font-size: 0.85rem;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin-bottom: 1rem;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .bibtex-copy-btn {
+            background: var(--accent);
+            color: var(--secondary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        .bibtex-copy-btn:hover {
+            opacity: 0.9;
+        }
+
+        .bibtex-copy-btn.copied {
+            background: #10b981;
         }
 
         .teaching-list {
@@ -653,10 +773,19 @@
                         ? `<a href="${pub.pdf}">${pub.title}</a>`
                         : pub.title;
 
+                    let linksHTML = '';
+                    if (pub.pdf) {
+                        linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
+                    }
+                    if (pub.bibtex) {
+                        linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                    }
+
                     article.innerHTML = `
                         <h3>${titleHTML}</h3>
                         <div class="authors">${pub.authors}</div>
                         <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
+                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
                     `;
                     pubList.appendChild(article);
                 });
@@ -671,10 +800,19 @@
                         ? `<a href="${preprint.pdf}">${preprint.title}</a>`
                         : preprint.title;
 
+                    let linksHTML = '';
+                    if (preprint.pdf) {
+                        linksHTML += `<a href="${preprint.pdf}" class="pub-link">PDF</a>`;
+                    }
+                    if (preprint.bibtex) {
+                        linksHTML += `<button class="bibtex-btn" data-bibtex="${preprint.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                    }
+
                     article.innerHTML = `
                         <h3>${titleHTML}</h3>
                         <div class="authors">${preprint.authors}</div>
                         <div class="venue">${preprint.venue}${preprint.date ? ', ' + preprint.date : ''}</div>
+                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
                     `;
                     preprintList.appendChild(article);
                 });
@@ -683,13 +821,66 @@
             }
         }
 
+        function showBibtex(button) {
+            const bibtexText = button.getAttribute('data-bibtex');
+            const modal = document.getElementById('bibtex-modal');
+            const bibtexContent = document.getElementById('bibtex-text');
+            bibtexContent.textContent = bibtexText;
+            modal.classList.add('active');
+        }
+
+        function closeBibtexModal() {
+            const modal = document.getElementById('bibtex-modal');
+            modal.classList.remove('active');
+        }
+
+        function copyBibtex() {
+            const bibtexText = document.getElementById('bibtex-text').textContent;
+            navigator.clipboard.writeText(bibtexText).then(() => {
+                const btn = document.getElementById('bibtex-copy-btn');
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             loadPublications();
 
             // Add theme toggle listener
             document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+            // Close modal when clicking outside
+            const modal = document.getElementById('bibtex-modal');
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeBibtexModal();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeBibtexModal();
+                }
+            });
         });
     </script>
+
+    <div id="bibtex-modal" class="bibtex-modal">
+        <div class="bibtex-modal-content">
+            <div class="bibtex-modal-header">
+                <h3>BibTeX</h3>
+                <button class="bibtex-close" onclick="closeBibtexModal()">&times;</button>
+            </div>
+            <div id="bibtex-text" class="bibtex-text"></div>
+            <button id="bibtex-copy-btn" class="bibtex-copy-btn" onclick="copyBibtex()">Copy to Clipboard</button>
+        </div>
+    </div>
 </body>
 </html>
