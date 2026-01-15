@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paul Schmitt - Assistant Professor at Cal Poly. Research in networking, privacy, and systems.">
+    <meta name="keywords" content="Paul Schmitt, Cal Poly, networking, privacy, research">
+    <meta name="author" content="Paul Schmitt">
+    <title>Paul Schmitt | Cal Poly</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0f1419;
+            --secondary: #ffffff;
+            --accent: #2563eb;
+            --text: #1f2937;
+            --text-secondary: #6b7280;
+            --light-bg: #f9fafb;
+            --border: #e5e7eb;
+            --spacing: 1rem;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--secondary);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: var(--secondary);
+            z-index: 100;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.2rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-decoration: none;
+            white-space: nowrap;
+            letter-spacing: -0.3px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3.5rem 1rem;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 3.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.1;
+            word-break: break-word;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-content .title {
+            font-size: 1.15rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-weight: 500;
+        }
+
+        .hero-content .contact {
+            font-size: 0.9rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-content .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            word-break: break-word;
+            font-weight: 500;
+        }
+
+        .hero-content .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+
+        .hero-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero-links a:hover {
+            text-decoration: underline;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .bio {
+            margin-bottom: 3.5rem;
+            font-size: 1rem;
+        }
+
+        .bio p {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+            color: var(--text-secondary);
+        }
+
+        .bio a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .bio a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.75rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .publication {
+            margin-bottom: 2rem;
+            padding-bottom: 1.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .publication h3 {
+            font-size: 0.98rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.45;
+            font-weight: 600;
+        }
+
+        .publication h3 a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .publication h3 a:hover {
+            text-decoration: underline;
+        }
+
+        .publication .authors {
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.4rem;
+            line-height: 1.55;
+            word-break: break-word;
+            font-weight: 500;
+        }
+
+        .publication .venue {
+            font-size: 0.84rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            word-break: break-word;
+        }
+
+        .teaching-list {
+            list-style: none;
+        }
+
+        .teaching-list li {
+            margin-bottom: 1.75rem;
+            padding-left: 0;
+        }
+
+        .teaching-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .teaching-list h3 {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+
+        .teaching-list .course {
+            font-size: 0.9rem;
+            color: var(--text);
+            margin-bottom: 0.35rem;
+            font-weight: 500;
+        }
+
+        .teaching-list .institution {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.85rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-bottom: 2.5rem;
+                padding-bottom: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content .title {
+                font-size: 1rem;
+                margin-bottom: 0.4rem;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            section {
+                margin-bottom: 3rem;
+            }
+
+            .publication {
+                margin-bottom: 1.75rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.75rem 1rem;
+            }
+
+            .logo {
+                font-size: 0.95rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding: 1.5rem 1rem;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.6rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .hero-content .title {
+                font-size: 0.9rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 0.75rem;
+            }
+
+            .bio p {
+                font-size: 0.9rem;
+            }
+
+            h2 {
+                font-size: 1.05rem;
+                margin-bottom: 1.25rem;
+            }
+
+            section {
+                margin-bottom: 2.25rem;
+            }
+
+            .publication {
+                margin-bottom: 1.5rem;
+                padding-bottom: 1.25rem;
+            }
+
+            .publication h3 {
+                font-size: 0.9rem;
+            }
+
+            .publication .authors,
+            .publication .venue {
+                font-size: 0.8rem;
+            }
+
+            .teaching-list li {
+                margin-bottom: 1.25rem;
+            }
+
+            .teaching-list .course {
+                font-size: 0.85rem;
+            }
+
+            .teaching-list .institution {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Paul Schmitt</a>
+            <ul class="nav-links">
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#preprints">Preprints</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="../docs/cv.pdf">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Paul Schmitt</h1>
+                <div class="title">Assistant Professor</div>
+                <div class="subtitle">Cal Poly - Computer Science & Software Engineering</div>
+                <div class="contact">
+                    <a href="mailto:prs@calpoly.edu">prs@calpoly.edu</a>
+                </div>
+                <div class="hero-links">
+                    <a href="#publications">Publications</a> •
+                    <a href="#preprints">Preprints</a> •
+                    <a href="#teaching">Teaching</a> •
+                    <a href="../docs/cv.pdf">CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../images/paul_profile.jpg" alt="Paul Schmitt">
+            </div>
+        </section>
+
+        <section class="bio">
+            <p>I am an Assistant Professor in the <a href="https://csc.calpoly.edu">Computer Science and Software Engineering</a> department at Cal Poly, and a principal investigator at the <a href="http://icsi.berkeley.edu">International Computer Science Institute</a>. I previously worked at the <a href="https://www.isi.edu">Information Sciences Institute</a> and the <a href="https://citp.princeton.edu">Center for Information Technology Policy</a> (CITP) at Princeton University. I completed my Ph.D. as a member of the <a href="https://moment.cs.ucsb.edu/">MOMENT</a> lab at the University of California, Santa Barbara. I'm also co-founder and CEO of <a href="https://invisv.com">Invisv</a>.</p>
+
+            <p>I work to make the Internet better by designing and building networked systems that improve privacy, enhance performance, and provide insight into networks. My research is rooted in expertise in protocols and architectures that are used at massive scales and underpin modern connectivity. To create immediate impact, I seek to create "dirty-slate" solutions that explore fundamental principles while being rapidly deployable in operational networks.</p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div id="publications-list"></div>
+        </section>
+
+        <section id="preprints">
+            <h2>Preprints & Work in Submission</h2>
+            <div id="preprints-list"></div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul class="teaching-list">
+                <li>
+                    <div class="institution">Cal Poly</div>
+                    <div class="course">Fall 2025: CPE 464 - Computer Networks</div>
+                    <div class="course">Spring 2025: CSC 453 - Operating Systems</div>
+                    <div class="course">Winter 2025: CSC 453 - Operating Systems</div>
+                </li>
+                <li>
+                    <div class="institution">University of Hawaiʻi at Mānoa</div>
+                    <div class="course"><a href="https://teaching.pschmitt.net/EE693F_Fall2024/">Fall 2024: EE 693F - Privacy and Security in the Modern Internet</a></div>
+                    <div class="course"><a href="https://teaching.pschmitt.net/EE449_Spring2024/">Spring 2024: EE 449 - Computer Communication Networks</a></div>
+                    <div class="course"><a href="https://teaching.pschmitt.net/EE693F_Fall2023/">Fall 2023: EE 693F - Privacy and Security in the Modern Internet</a></div>
+                    <div class="course"><a href="https://teaching.pschmitt.net/EE449_Spring2023/">Spring 2023: EE 449 - Computer Communication Networks</a></div>
+                    <div class="course"><a href="https://teaching.pschmitt.net/EE693F_Fall2022/">Fall 2022: EE 693F - Privacy and Security in the Modern Internet</a></div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Paul Schmitt. All rights reserved.</p>
+    </footer>
+
+    <script>
+        async function loadPublications() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+
+                // Render publications
+                const pubList = document.getElementById('publications-list');
+                data.publications.forEach(pub => {
+                    const article = document.createElement('article');
+                    article.className = 'publication';
+
+                    let titleHTML = pub.pdf
+                        ? `<a href="${pub.pdf}">${pub.title}</a>`
+                        : pub.title;
+
+                    article.innerHTML = `
+                        <h3>${titleHTML}</h3>
+                        <div class="authors">${pub.authors}</div>
+                        <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
+                    `;
+                    pubList.appendChild(article);
+                });
+
+                // Render preprints
+                const preprintList = document.getElementById('preprints-list');
+                data.preprints.forEach(preprint => {
+                    const article = document.createElement('article');
+                    article.className = 'publication';
+
+                    let titleHTML = preprint.pdf
+                        ? `<a href="${preprint.pdf}">${preprint.title}</a>`
+                        : preprint.title;
+
+                    article.innerHTML = `
+                        <h3>${titleHTML}</h3>
+                        <div class="authors">${preprint.authors}</div>
+                        <div class="venue">${preprint.venue}${preprint.date ? ', ' + preprint.date : ''}</div>
+                    `;
+                    preprintList.appendChild(article);
+                });
+            } catch (error) {
+                console.error('Error loading publications:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadPublications);
+    </script>
+</body>
+</html>

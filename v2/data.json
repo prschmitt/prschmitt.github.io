@@ -1,0 +1,341 @@
+{
+  "publications": [
+    {
+      "title": "Measuring Low Latency at Scale: A Field Study of L4S in Residential Broadband",
+      "authors": "Ayoub Ben Ameur, Francesco Bronzino, Nick Feamster, Paul Schmitt",
+      "venue": "Passive and Active Measurements Conference (PAM)",
+      "date": "March 2026",
+      "pdf": "../docs/pam2026.pdf"
+    },
+    {
+      "title": "JITI: Dynamic Model Serving for Just-in-Time Traffic Inference",
+      "authors": "Xi Jiang, Shinan Liu, Saloua Naama, Francesco Bronzino, Paul Schmitt, Nick Feamster",
+      "venue": "Proc. of the ACM on Networking (PACMNET), CoNEXT",
+      "date": "December 2025",
+      "pdf": "../docs/conext25.pdf"
+    },
+    {
+      "title": "Rethinking Geolocalization on the Internet",
+      "authors": "Augustin Laouar, Loïc Desgeorges, Paul Schmitt, Francesco Bronzino",
+      "venue": "ACM HotNets",
+      "date": "November 2025",
+      "pdf": "../docs/hotnets25.pdf"
+    },
+    {
+      "title": "Beyond Data Points: Regionalizing Crowdsourced Latency Measurements",
+      "authors": "Taveesh Sharma, Paul Schmitt, Francesco Bronzino, Nick Feamster, Nicole Marwell",
+      "venue": "ACM SIGMETRICS",
+      "date": "June 2025",
+      "pdf": "../docs/sigmetrics25_beyond.pdf"
+    },
+    {
+      "title": "The Cost of Packet Loss on ML-Based Traffic Analysis",
+      "authors": "Johann Hugon, Paul Schmitt, Francesco Bronzino",
+      "venue": "IEEE LANMAN",
+      "date": "July 2025",
+      "pdf": "../docs/lanman-hugon.pdf"
+    },
+    {
+      "title": "Feasibility of State Space Models for Network Traffic Generation",
+      "authors": "Andrew Chu, Xi Jiang, Shinan Liu, Arjun Nitin Bhagoji, Francesco Bronzino, Paul Schmitt, Nick Feamster",
+      "venue": "SIGCOMM Workshop on Networks for AI Computing",
+      "date": "August 2024",
+      "pdf": "../docs/naic24.pdf"
+    },
+    {
+      "title": "NetDiffusion: Network Data Augmentation Through Protocol-Constrained Traffic Generation",
+      "authors": "Xi Jiang, Shinan Liu, Aaron Gember-Jacobson, Arjun Nitin Bhagoji, Paul Schmitt, Francesco Bronzino, Nick Feamster",
+      "venue": "ACM SIGMETRICS",
+      "date": "June 2024",
+      "pdf": "../docs/netdiffusion.pdf"
+    },
+    {
+      "title": "LEAF: Navigating Concept Drift in Cellular Networks",
+      "authors": "Shinan Liu, Francesco Bronzino, Paul Schmitt, Arjun Bhagoji, Nick Feamster, Hector Garcia Crespo, Timothy Coyle, Brian Ward",
+      "venue": "Proc. of the ACM on Networking (PACMNET)",
+      "date": "September 2023",
+      "pdf": "../docs/leaf.pdf"
+    },
+    {
+      "title": "Generative, High-Fidelity Network Traces",
+      "authors": "Xi Jiang, Shinan Liu, Aaron Gember-Jacobson, Paul Schmitt, Francesco Bronzino, Nick Feamster",
+      "venue": "ACM HotNets",
+      "date": "November 2023",
+      "pdf": "../docs/generative_hotnets.pdf"
+    },
+    {
+      "title": "Measuring the Performance of iCloud Private Relay",
+      "authors": "Martino Trevisan, Idilio Drago, Paul Schmitt, Francesco Bronzino",
+      "venue": "Passive and Active Measurements Conference (PAM)",
+      "date": "March 2023",
+      "pdf": "../docs/pam23_pr.pdf"
+    },
+    {
+      "title": "The Decoupling Principle: a Practical Privacy Framework",
+      "authors": "Paul Schmitt, Jana Iyengar, Christopher Wood, Barath Raghavan",
+      "venue": "ACM HotNets",
+      "date": "November 2022",
+      "pdf": "../docs/decoupling.pdf"
+    },
+    {
+      "title": "Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic",
+      "authors": "Francesco Bronzino, Paul Schmitt, Sara Ayoubi, Hyojoon Kim, Renata Teixeira, Nick Feamster",
+      "venue": "ACM SIGMETRICS",
+      "date": "June 2022",
+      "pdf": "../docs/beyond.pdf"
+    },
+    {
+      "title": "New Directions in Automated Traffic Analysis",
+      "authors": "Jordan Holland, Paul Schmitt, Nick Feamster, Prateek Mittal",
+      "venue": "ACM CCS",
+      "date": "November 2021",
+      "pdf": "../docs/nprint.pdf"
+    },
+    {
+      "title": "Designing for Tussle in Encrypted DNS",
+      "authors": "Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster",
+      "venue": "ACM HotNets",
+      "date": "November 2021",
+      "pdf": "../docs/ddns.pdf"
+    },
+    {
+      "title": "Pretty Good Phone Privacy",
+      "authors": "Paul Schmitt, Barath Raghavan",
+      "venue": "USENIX Security Symposium",
+      "date": "August 2021",
+      "pdf": "../docs/pgpp.pdf"
+    },
+    {
+      "title": "Encryption without Centralization: Distributing DNS Queries Across Recursive Resolvers",
+      "authors": "Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster",
+      "venue": "ACM/IRTF Applied Networking Research Workshop (ANRW)",
+      "date": "July 2021",
+      "pdf": "../docs/anrw_ddns.pdf"
+    },
+    {
+      "title": "Can Encrypted DNS Be Fast?",
+      "authors": "Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster",
+      "venue": "Passive and Active Measurements Conference (PAM)",
+      "date": "March 2021",
+      "pdf": "../docs/fcc.pdf"
+    },
+    {
+      "title": "Characterizing Service Provider Response to the COVID-19 Pandemic in the United States",
+      "authors": "Shinan Liu, Paul Schmitt, Francesco Bronzino, Nick Feamster",
+      "venue": "Passive and Active Measurements Conference (PAM)",
+      "date": "March 2021",
+      "pdf": "../docs/covid.pdf"
+    },
+    {
+      "title": "Mapping the Digital Divide: Before, During, and After COVID-19",
+      "authors": "Francesco Bronzino, Nick Feamster, Shinan Liu, James Saxon, Paul Schmitt",
+      "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
+      "date": "February 2021",
+      "pdf": "../docs/tprc_divide.pdf"
+    },
+    {
+      "title": "Inferring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience",
+      "authors": "Francesco Bronzino, Paul Schmitt, Sara Ayoubi, Guilherme Martins, Renata Teixeira, Nick Feamster",
+      "venue": "ACM SIGMETRICS",
+      "date": "June 2020",
+      "pdf": "../docs/sigmetrics20.pdf"
+    },
+    {
+      "title": "Comparing the Effects of DNS, DoT, and DoH on Web Performance",
+      "authors": "Austin Hounsel, Kevin Borgolte, Paul Schmitt, Jordan Holland, Nick Feamster",
+      "venue": "The Web Conference (WWW)",
+      "date": "April 2020",
+      "pdf": "../docs/www2020-dns-dot-doh.pdf"
+    },
+    {
+      "title": "How DNS over HTTPS is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem",
+      "authors": "Kevin Borgolte, Tithi Chattopadhyay, Nick Feamster, Mihir Kshirsagar, Jordan Holland, Austin Hounsel, Paul Schmitt",
+      "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
+      "date": "September 2019",
+      "pdf": "../docs/tprc2019-doh-policy.pdf"
+    },
+    {
+      "title": "Oblivious DNS: Practical Privacy for DNS Queries",
+      "authors": "Paul Schmitt, Anne Edmundson, Allison Mankin, Nick Feamster",
+      "venue": "Privacy Enhancing Technologies Symposium (PETS)",
+      "date": "July 2019",
+      "pdf": "../docs/odns.pdf"
+    },
+    {
+      "title": "MPTCP Performance over Heterogenous Subpaths",
+      "authors": "Vivek Adarsh, Paul Schmitt, Elizabeth Belding",
+      "venue": "The International Conference on Computer Communications and Networks (ICCCN)",
+      "date": "July 2019",
+      "pdf": "../docs/mptcp.pdf"
+    },
+    {
+      "title": "Third-Party Cellular Congestion Detection and Augmentation",
+      "authors": "Paul Schmitt, Daniel Iland, Mariya Zheleva, Elizabeth Belding",
+      "venue": "IEEE Transactions on Mobile Computing",
+      "date": "January 2019",
+      "pdf": "../docs/tmc2019.pdf"
+    },
+    {
+      "title": "AirPress: High-accuracy Spectrum Summarization Using Compressed Scans",
+      "authors": "Mariya Zheleva, Timothy Larock, Paul Schmitt, Petko Bogdanov",
+      "venue": "IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)",
+      "date": "October 2018",
+      "pdf": "../docs/AirPRESS_DySPAN18.pdf"
+    },
+    {
+      "title": "Enhancing Transparency: Internet Video Quality Inference from Network Traffic",
+      "authors": "Paul Schmitt, Francesco Bronzino, Renata Teixeira, Tithi Chattopadhyay, Nick Feamster",
+      "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
+      "date": "September 2018",
+      "pdf": "../docs/TPRC_Net.pdf"
+    },
+    {
+      "title": "A Cellular Network Radio Access Performance Measurement System: Results from a Ugandan Refugee Settlements Field Trial",
+      "authors": "Carleen Maitland, Richard Caneba, Paul Schmitt, Tom Koutsky",
+      "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
+      "date": "September 2018",
+      "pdf": "../docs/TPRC_Uganda.pdf"
+    },
+    {
+      "title": "Cellular and Internet Connectivity for Displaced Populations",
+      "authors": "Paul Schmitt, Daniel Iland, Elizabeth Belding, Mariya Zheleva",
+      "venue": "Chapter in 'Digital Lifeline? ICTs for Refugees and Displaced Persons', MIT Press",
+      "date": "May 2018",
+      "pdf": "https://mitpress.mit.edu/books/digital-lifeline"
+    },
+    {
+      "title": "AirVIEW: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing",
+      "authors": "Mariya Zheleva, Petko Bogdanov, Timothy Larock, Paul Schmitt",
+      "venue": "IEEE Infocom",
+      "date": "April 2018",
+      "pdf": "../docs/infocom2018.pdf"
+    },
+    {
+      "title": "Low On Air: Inherent Wireless Channel Capacity Limitations",
+      "authors": "Paul Schmitt, Elizabeth Belding",
+      "venue": "Workshop on Computing within Limits (LIMITS)",
+      "date": "June 2017",
+      "pdf": "../docs/limits02-schmittA.pdf"
+    },
+    {
+      "title": "Helping the Lone Operator in the Vast Frontier",
+      "authors": "Thomas Pötsch, Paul Schmitt, Jay Chen, Barath Raghavan",
+      "venue": "ACM Workshop on Hot Topics in Networks (HotNets)",
+      "date": "November 2016",
+      "pdf": "../docs/hotnets_planning.pdf"
+    },
+    {
+      "title": "PhoneHome: Robust Extension of Cellular Coverage",
+      "authors": "Paul Schmitt, Daniel Iland, Elizabeth Belding, and Mariya Zheleva",
+      "venue": "The International Conference on Computer Communications and Networks (ICCCN)",
+      "date": "August 2016",
+      "pdf": "../docs/icccn_phonehome.pdf"
+    },
+    {
+      "title": "SmartCell: Small-Scale Mobile Congestion Awareness",
+      "authors": "Paul Schmitt, Daniel Iland, and Elizabeth Belding",
+      "venue": "IEEE Communications Magazine",
+      "date": "July 2016",
+      "pdf": "../docs/commsmag_smartcell.pdf"
+    },
+    {
+      "title": "Navigating Connectivity in Reduced Infrastructure Environments",
+      "authors": "Paul Schmitt, Elizabeth Belding",
+      "venue": "Workshop on Computing within Limits (LIMITS)",
+      "date": "June 2016",
+      "pdf": "../docs/limits_2016.pdf"
+    },
+    {
+      "title": "Community-Level Access Divides: A Refugee Camp Case Study",
+      "authors": "Paul Schmitt, Daniel Iland, Elizabeth Belding, Brian Tomaszewski, Ying Xu, and Carleen Maitland",
+      "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
+      "date": "June 2016",
+      "pdf": "../docs/ictd16_communitydivides.pdf"
+    },
+    {
+      "title": "HybridCell: Cellular connectivity on the fringes with demand-driven local cells",
+      "authors": "Paul Schmitt, Daniel Iland, Mariya Zheleva, Elizabeth Belding",
+      "venue": "IEEE Infocom",
+      "date": "April 2016",
+      "pdf": "../docs/hybridcell_infocom16.pdf"
+    },
+    {
+      "title": "A Study of MVNO Data Paths and Performance",
+      "authors": "Paul Schmitt, Morgan Vigil, Elizabeth Belding",
+      "venue": "Passive and Active Measurements Conference (PAM)",
+      "date": "March 2016",
+      "pdf": "../docs/pam16-mvno.pdf"
+    },
+    {
+      "title": "Internet Media Upload Caching for Poorly-Connected Regions",
+      "authors": "Paul Schmitt, Ramya Raghavendra, Elizabeth Belding",
+      "venue": "ACM Symposium on Computing for Development (DEV)",
+      "date": "December 2015",
+      "pdf": "../docs/dev_villagecache.pdf"
+    },
+    {
+      "title": "Internet Bandwidth Upgrade: Implications on Performance and Usage in Rural Zambia",
+      "authors": "Mariya Zheleva, Paul Schmitt, Morgan Vigil, Elizabeth Belding",
+      "venue": "Information Technologies and International Development Journal (ITID), Vol 11, Issue 2",
+      "date": "Summer 2015",
+      "pdf": "../docs/itid-bandwidth.pdf"
+    },
+    {
+      "title": "The Increased Bandwidth Fallacy: Performance and Usage in Rural Zambia",
+      "authors": "Mariya Zheleva, Paul Schmitt, Morgan Vigil, Elizabeth Belding",
+      "venue": "ACM Symposium on Computing for Development (DEV)",
+      "date": "December 2013",
+      "pdf": "../docs/dev13-increased-bw-fallacy.pdf"
+    },
+    {
+      "title": "Bringing visibility to rural users in Côte d'Ivoire",
+      "authors": "Mariya Zheleva, Paul Schmitt, Morgan Vigil, Elizabeth Belding",
+      "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
+      "date": "December 2013",
+      "pdf": "../docs/ictd13-rural-cellular-users.pdf"
+    },
+    {
+      "title": "Community detection in cellular network traces",
+      "authors": "Mariya Zheleva, Paul Schmitt, Morgan Vigil, Elizabeth Belding",
+      "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
+      "date": "December 2013",
+      "pdf": "../docs/ictd13-comm-detect.pdf"
+    },
+    {
+      "title": "Communication flow patterns in the Orange Telecom D4D dataset",
+      "authors": "Paul Schmitt, Morgan Vigil, Mariya Zheleva, Elizabeth Belding",
+      "venue": "Conference on the Analysis of Mobile Phone Datasets (NetMob)",
+      "date": "May 2013",
+      "pdf": "../docs/d4d_ucsb_updated.pdf"
+    }
+  ],
+  "preprints": [
+    {
+      "title": "The Ghost Trilemma",
+      "authors": "Sulagna Mukherjee, Srivatsan Ravi, Paul Schmitt, Barath Raghavan",
+      "venue": "arXiv:2308.02202 [cs.CR]",
+      "date": "August 2023",
+      "pdf": "../docs/ghost.pdf"
+    },
+    {
+      "title": "Internet Localization of Multi-Party Relay Users: Inherent Friction Between Internet Services and User Privacy",
+      "authors": "Sean Flynn, Francesco Bronzino, Paul Schmitt",
+      "venue": "arXiv:2307.04009 [cs.NI]",
+      "date": "July 2023",
+      "pdf": "../docs/pr-localization.pdf"
+    },
+    {
+      "title": "Towards Reproducible Network Traffic Analysis",
+      "authors": "Jordan Holland, Paul Schmitt, Prateek Mittal, Nick Feamster",
+      "venue": "arXiv:2203.12410 [cs.NI]",
+      "date": "March 2022",
+      "pdf": "../docs/pcapml.pdf"
+    },
+    {
+      "title": "Enabling Personalized Video Quality Optimization",
+      "authors": "Xu Zhang, Paul Schmitt, Marchini Chetty, Nick Feamster, Junchen Jiang",
+      "venue": "Work in Submission",
+      "date": ""
+    }
+  ]
+}
