@@ -7,7 +7,7 @@
       "date": "March 2026",
       "pdf": "../docs/pam2026.pdf",
       "bibtex": "@inproceedings{benameur2026l4s,\n  title={Measuring Low Latency at Scale: A Field Study of {L4S} in Residential Broadband},\n  author={Ben Ameur, Ayoub and Bronzino, Francesco and Feamster, Nick and Schmitt, Paul},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2026\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "JITI: Dynamic Model Serving for Just-in-Time Traffic Inference",
@@ -25,7 +25,7 @@
       "date": "November 2025",
       "pdf": "../docs/hotnets25.pdf",
       "bibtex": "@inproceedings{laouar2025geo,\n  title={Rethinking Geolocalization on the Internet},\n  author={Laouar, Augustin and Desgeorges, Lo\\\"ic and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2025\n}",
-      "selected": false
+      "selected": true
     },
     {
       "title": "Beyond Data Points: Regionalizing Crowdsourced Latency Measurements",
@@ -70,7 +70,7 @@
       "date": "September 2023",
       "pdf": "../docs/leaf.pdf",
       "bibtex": "@inproceedings{liu2023leaf,\n  title={{LEAF}: Navigating Concept Drift in Cellular Networks},\n  author={Liu, Shinan and Bronzino, Francesco and Schmitt, Paul and Bhagoji, Arjun and Feamster, Nick and Garcia Crespo, Hector and Coyle, Timothy and Ward, Brian},\n  booktitle={Proc. of the ACM on Networking (PACMNET)},\n  month=sep,\n  year=2023\n}",
-      "selected": false
+      "selected": true
     },
     {
       "title": "Generative, High-Fidelity Network Traces",
@@ -97,7 +97,7 @@
       "date": "November 2022",
       "pdf": "../docs/decoupling.pdf",
       "bibtex": "@inproceedings{schmitt2022decoupling,\n  title={The Decoupling Principle: a Practical Privacy Framework},\n  author={Schmitt, Paul and Iyengar, Jana and Wood, Christopher and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2022\n}",
-      "selected": false
+      "selected": true
     },
     {
       "title": "Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic",
@@ -427,10 +427,10 @@
     },
     {
       "title": "Enabling Personalized Video Quality Optimization",
-      "authors": "Xu Zhang, Paul Schmitt, Marchini Chetty, Nick Feamster, Junchen Jiang",
+      "authors": "Xu Zhang, Paul Schmitt, Marshini Chetty, Nick Feamster, Junchen Jiang",
       "venue": "Work in Submission",
       "date": "",
-      "bibtex": "@misc{zhang2024video,\n  title={Enabling Personalized Video Quality Optimization},\n  author={Zhang, Xu and Schmitt, Paul and Chetty, Marchini and Feamster, Nick and Jiang, Junchen},\n  year=2024,\n  note={Work in submission}\n}",
+      "bibtex": "@misc{zhang2024video,\n  title={Enabling Personalized Video Quality Optimization},\n  author={Zhang, Xu and Schmitt, Paul and Chetty, Marshini and Feamster, Nick and Jiang, Junchen},\n  year=2024,\n  note={Work in submission}\n}",
       "selected": false
     }
   ]
