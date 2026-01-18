@@ -25,7 +25,7 @@
       "date": "November 2025",
       "pdf": "../docs/hotnets25.pdf",
       "bibtex": "@inproceedings{laouar2025geo,\n  title={Rethinking Geolocalization on the Internet},\n  author={Laouar, Augustin and Desgeorges, Lo\\\"ic and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2025\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Beyond Data Points: Regionalizing Crowdsourced Latency Measurements",
@@ -79,7 +79,7 @@
       "date": "November 2023",
       "pdf": "../docs/generative_hotnets.pdf",
       "bibtex": "@inproceedings{jiang2023generative,\n  title={Generative, High-Fidelity Network Traces},\n  author={Jiang, Xi and Liu, Shinan and Gember-Jacobson, Aaron and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2023\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Measuring the Performance of iCloud Private Relay",
@@ -97,7 +97,7 @@
       "date": "November 2022",
       "pdf": "../docs/decoupling.pdf",
       "bibtex": "@inproceedings{schmitt2022decoupling,\n  title={The Decoupling Principle: a Practical Privacy Framework},\n  author={Schmitt, Paul and Iyengar, Jana and Wood, Christopher and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2022\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic",
@@ -124,7 +124,7 @@
       "date": "November 2021",
       "pdf": "../docs/ddns.pdf",
       "bibtex": "@inproceedings{hounsel2021ddns,\n  title={Designing for Tussle in Encrypted {DNS}},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2021\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Pretty Good Phone Privacy",
@@ -187,7 +187,7 @@
       "date": "April 2020",
       "pdf": "../docs/www2020-dns-dot-doh.pdf",
       "bibtex": "@inproceedings{hounsel2020dns,\n  title={Comparing the Effects of {DNS}, {DoT}, and {DoH} on Web Performance},\n  author={Hounsel, Austin and Borgolte, Kevin and Schmitt, Paul and Holland, Jordan and Feamster, Nick},\n  booktitle={The Web Conference (WWW)},\n  month=apr,\n  year=2020\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "How DNS over HTTPS is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem",
@@ -268,7 +268,7 @@
       "date": "April 2018",
       "pdf": "../docs/infocom2018.pdf",
       "bibtex": "@inproceedings{zheleva2018airview,\n  title={Air{VIEW}: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing},\n  author={Zheleva, Mariya and Bogdanov, Petko and Larock, Timothy and Schmitt, Paul},\n  booktitle={IEEE INFOCOM 2018 - IEEE Conference on Computer Communications},\n  month=apr,\n  year=2018\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Low On Air: Inherent Wireless Channel Capacity Limitations",
@@ -286,7 +286,7 @@
       "date": "November 2016",
       "pdf": "../docs/hotnets_planning.pdf",
       "bibtex": "@inproceedings{potsch2016hotnets,\n  title={Helping the Lone Operator in the Vast Frontier},\n  author={P\\\"otsch, Thomas and Schmitt, Paul and Chen, Jay and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2016\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "PhoneHome: Robust Extension of Cellular Coverage",
@@ -331,7 +331,7 @@
       "date": "April 2016",
       "pdf": "../docs/hybridcell_infocom16.pdf",
       "bibtex": "@inproceedings{schmitt2016hybrid,\n  title={{HybridCell}: Cellular Connectivity on the Fringes with Demand-Driven Local Cells},\n  author={Schmitt, Paul and Iland, Daniel and Zheleva, Mariya and Belding, Elizabeth},\n  booktitle={IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on Computer Communications},\n  month=apr,\n  year=2016\n}",
-      "selected": true
+      "selected": false
     },
     {
       "title": "A Study of MVNO Data Paths and Performance",
