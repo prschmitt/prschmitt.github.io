@@ -836,76 +836,83 @@
         async function loadPublications() {
             try {
                 const response = await fetch('data.json');
+                if (!response.ok) throw new Error('Failed to fetch data.json');
                 const data = await response.json();
 
                 // Render selected publications on home page
                 const homePubList = document.getElementById('home-publications-list');
-                data.publications.filter(pub => pub.selected).forEach(pub => {
-                    const article = document.createElement('article');
-                    article.className = 'publication';
+                if (homePubList) {
+                    data.publications.filter(pub => pub.selected).forEach(pub => {
+                        const article = document.createElement('article');
+                        article.className = 'publication';
 
-                    let linksHTML = '';
-                    if (pub.pdf) {
-                        linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
-                    }
-                    if (pub.bibtex) {
-                        linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
-                    }
+                        let linksHTML = '';
+                        if (pub.pdf) {
+                            linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
+                        }
+                        if (pub.bibtex) {
+                            linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                        }
 
-                    article.innerHTML = `
-                        <h3>${pub.title}</h3>
-                        <div class="authors">${pub.authors}</div>
-                        <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
-                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
-                    `;
-                    homePubList.appendChild(article);
-                });
+                        article.innerHTML = `
+                            <h3>${pub.title}</h3>
+                            <div class="authors">${pub.authors}</div>
+                            <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
+                            ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
+                        `;
+                        homePubList.appendChild(article);
+                    });
+                }
 
                 // Render all publications
                 const pubList = document.getElementById('publications-list');
-                data.publications.forEach(pub => {
-                    const article = document.createElement('article');
-                    article.className = 'publication';
+                if (pubList) {
+                    data.publications.forEach(pub => {
+                        const article = document.createElement('article');
+                        article.className = 'publication';
 
-                    let linksHTML = '';
-                    if (pub.pdf) {
-                        linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
-                    }
-                    if (pub.bibtex) {
-                        linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
-                    }
+                        let linksHTML = '';
+                        if (pub.pdf) {
+                            linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
+                        }
+                        if (pub.bibtex) {
+                            linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                        }
 
-                    article.innerHTML = `
-                        <h3>${pub.title}</h3>
-                        <div class="authors">${pub.authors}</div>
-                        <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
-                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
-                    `;
-                    pubList.appendChild(article);
-                });
+                        article.innerHTML = `
+                            <h3>${pub.title}</h3>
+                            <div class="authors">${pub.authors}</div>
+                            <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
+                            ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
+                        `;
+                        pubList.appendChild(article);
+                    });
+                }
 
                 // Render all preprints
                 const preprintList = document.getElementById('preprints-list');
-                data.preprints.forEach(preprint => {
-                    const article = document.createElement('article');
-                    article.className = 'publication';
+                if (preprintList) {
+                    data.preprints.forEach(preprint => {
+                        const article = document.createElement('article');
+                        article.className = 'publication';
 
-                    let linksHTML = '';
-                    if (preprint.pdf) {
-                        linksHTML += `<a href="${preprint.pdf}" class="pub-link">PDF</a>`;
-                    }
-                    if (preprint.bibtex) {
-                        linksHTML += `<button class="bibtex-btn" data-bibtex="${preprint.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
-                    }
+                        let linksHTML = '';
+                        if (preprint.pdf) {
+                            linksHTML += `<a href="${preprint.pdf}" class="pub-link">PDF</a>`;
+                        }
+                        if (preprint.bibtex) {
+                            linksHTML += `<button class="bibtex-btn" data-bibtex="${preprint.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                        }
 
-                    article.innerHTML = `
-                        <h3>${preprint.title}</h3>
-                        <div class="authors">${preprint.authors}</div>
-                        <div class="venue">${preprint.venue}${preprint.date ? ', ' + preprint.date : ''}</div>
-                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
-                    `;
-                    preprintList.appendChild(article);
-                });
+                        article.innerHTML = `
+                            <h3>${preprint.title}</h3>
+                            <div class="authors">${preprint.authors}</div>
+                            <div class="venue">${preprint.venue}${preprint.date ? ', ' + preprint.date : ''}</div>
+                            ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
+                        `;
+                        preprintList.appendChild(article);
+                    });
+                }
             } catch (error) {
                 console.error('Error loading publications:', error);
             }
