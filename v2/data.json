@@ -6,7 +6,8 @@
       "venue": "Passive and Active Measurements Conference (PAM)",
       "date": "March 2026",
       "pdf": "../docs/pam2026.pdf",
-      "bibtex": "@inproceedings{benameur2026l4s,\n  title={Measuring Low Latency at Scale: A Field Study of {L4S} in Residential Broadband},\n  author={Ben Ameur, Ayoub and Bronzino, Francesco and Feamster, Nick and Schmitt, Paul},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2026\n}"
+      "bibtex": "@inproceedings{benameur2026l4s,\n  title={Measuring Low Latency at Scale: A Field Study of {L4S} in Residential Broadband},\n  author={Ben Ameur, Ayoub and Bronzino, Francesco and Feamster, Nick and Schmitt, Paul},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2026\n}",
+      "selected": true
     },
     {
       "title": "JITI: Dynamic Model Serving for Just-in-Time Traffic Inference",
@@ -14,15 +15,17 @@
       "venue": "Proc. of the ACM on Networking (PACMNET), CoNEXT",
       "date": "December 2025",
       "pdf": "../docs/conext25.pdf",
-      "bibtex": "@inproceedings{jiang2025jiti,\n  title={{JITI}: Dynamic Model Serving for Just-in-Time Traffic Inference},\n  author={Jiang, Xi and Liu, Shinan and Naama, Saloua and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={21st International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},\n  address={Hong Kong},\n  month=dec,\n  year=2025\n}"
+      "bibtex": "@inproceedings{jiang2025jiti,\n  title={{JITI}: Dynamic Model Serving for Just-in-Time Traffic Inference},\n  author={Jiang, Xi and Liu, Shinan and Naama, Saloua and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={21st International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},\n  address={Hong Kong},\n  month=dec,\n  year=2025\n}",
+      "selected": true
     },
     {
       "title": "Rethinking Geolocalization on the Internet",
-      "authors": "Augustin Laouar, Loïc Desgeorges, Paul Schmitt, Francesco Bronzino",
+      "authors": "Augustin Laouar, Lo\u00efc Desgeorges, Paul Schmitt, Francesco Bronzino",
       "venue": "ACM HotNets",
       "date": "November 2025",
       "pdf": "../docs/hotnets25.pdf",
-      "bibtex": "@inproceedings{laouar2025geo,\n  title={Rethinking Geolocalization on the Internet},\n  author={Laouar, Augustin and Desgeorges, Lo\\\"ic and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2025\n}"
+      "bibtex": "@inproceedings{laouar2025geo,\n  title={Rethinking Geolocalization on the Internet},\n  author={Laouar, Augustin and Desgeorges, Lo\\\"ic and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2025\n}",
+      "selected": true
     },
     {
       "title": "Beyond Data Points: Regionalizing Crowdsourced Latency Measurements",
@@ -30,7 +33,8 @@
       "venue": "ACM SIGMETRICS",
       "date": "June 2025",
       "pdf": "../docs/sigmetrics25_beyond.pdf",
-      "bibtex": "@inproceedings{sharma2025beyond,\n  title={Beyond Data Points: Regionalizing Crowdsourced Latency Measurements},\n  author={Sharma, Taveesh and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick and Marwell, Nicole},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2025\n}"
+      "bibtex": "@inproceedings{sharma2025beyond,\n  title={Beyond Data Points: Regionalizing Crowdsourced Latency Measurements},\n  author={Sharma, Taveesh and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick and Marwell, Nicole},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2025\n}",
+      "selected": true
     },
     {
       "title": "The Cost of Packet Loss on ML-Based Traffic Analysis",
@@ -38,7 +42,8 @@
       "venue": "IEEE LANMAN",
       "date": "July 2025",
       "pdf": "../docs/lanman-hugon.pdf",
-      "bibtex": "@inproceedings{hugon2025cost,\n  title={The Cost of Packet Loss on {ML}-Based Traffic Analysis},\n  author={Hugon, Johann and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={IEEE LANMAN},\n  month=jul,\n  year=2025\n}"
+      "bibtex": "@inproceedings{hugon2025cost,\n  title={The Cost of Packet Loss on {ML}-Based Traffic Analysis},\n  author={Hugon, Johann and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={IEEE LANMAN},\n  month=jul,\n  year=2025\n}",
+      "selected": false
     },
     {
       "title": "Feasibility of State Space Models for Network Traffic Generation",
@@ -46,7 +51,8 @@
       "venue": "SIGCOMM Workshop on Networks for AI Computing",
       "date": "August 2024",
       "pdf": "../docs/naic24.pdf",
-      "bibtex": "@inproceedings{chu2024ssm,\n  title={Feasibility of State Space Models for Network Traffic Generation},\n  author={Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun Nitin and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={SIGCOMM Workshop on Networks for AI Computing},\n  month=aug,\n  year=2024\n}"
+      "bibtex": "@inproceedings{chu2024ssm,\n  title={Feasibility of State Space Models for Network Traffic Generation},\n  author={Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun Nitin and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={SIGCOMM Workshop on Networks for AI Computing},\n  month=aug,\n  year=2024\n}",
+      "selected": false
     },
     {
       "title": "NetDiffusion: Network Data Augmentation Through Protocol-Constrained Traffic Generation",
@@ -54,7 +60,8 @@
       "venue": "ACM SIGMETRICS",
       "date": "June 2024",
       "pdf": "../docs/netdiffusion.pdf",
-      "bibtex": "@inproceedings{jiang2024netdiffusion,\n  title={{NetDiffusion}: Network Data Augmentation Through Protocol-Constrained Traffic Generation},\n  author={Jiang, Xi and Liu, Shinan and Gember-Jacobson, Aaron and Bhagoji, Arjun Nitin and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2024\n}"
+      "bibtex": "@inproceedings{jiang2024netdiffusion,\n  title={{NetDiffusion}: Network Data Augmentation Through Protocol-Constrained Traffic Generation},\n  author={Jiang, Xi and Liu, Shinan and Gember-Jacobson, Aaron and Bhagoji, Arjun Nitin and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2024\n}",
+      "selected": true
     },
     {
       "title": "LEAF: Navigating Concept Drift in Cellular Networks",
@@ -62,7 +69,8 @@
       "venue": "Proc. of the ACM on Networking (PACMNET)",
       "date": "September 2023",
       "pdf": "../docs/leaf.pdf",
-      "bibtex": "@inproceedings{liu2023leaf,\n  title={{LEAF}: Navigating Concept Drift in Cellular Networks},\n  author={Liu, Shinan and Bronzino, Francesco and Schmitt, Paul and Bhagoji, Arjun and Feamster, Nick and Garcia Crespo, Hector and Coyle, Timothy and Ward, Brian},\n  booktitle={Proc. of the ACM on Networking (PACMNET)},\n  month=sep,\n  year=2023\n}"
+      "bibtex": "@inproceedings{liu2023leaf,\n  title={{LEAF}: Navigating Concept Drift in Cellular Networks},\n  author={Liu, Shinan and Bronzino, Francesco and Schmitt, Paul and Bhagoji, Arjun and Feamster, Nick and Garcia Crespo, Hector and Coyle, Timothy and Ward, Brian},\n  booktitle={Proc. of the ACM on Networking (PACMNET)},\n  month=sep,\n  year=2023\n}",
+      "selected": false
     },
     {
       "title": "Generative, High-Fidelity Network Traces",
@@ -70,7 +78,8 @@
       "venue": "ACM HotNets",
       "date": "November 2023",
       "pdf": "../docs/generative_hotnets.pdf",
-      "bibtex": "@inproceedings{jiang2023generative,\n  title={Generative, High-Fidelity Network Traces},\n  author={Jiang, Xi and Liu, Shinan and Gember-Jacobson, Aaron and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2023\n}"
+      "bibtex": "@inproceedings{jiang2023generative,\n  title={Generative, High-Fidelity Network Traces},\n  author={Jiang, Xi and Liu, Shinan and Gember-Jacobson, Aaron and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2023\n}",
+      "selected": true
     },
     {
       "title": "Measuring the Performance of iCloud Private Relay",
@@ -78,7 +87,8 @@
       "venue": "Passive and Active Measurements Conference (PAM)",
       "date": "March 2023",
       "pdf": "../docs/pam23_pr.pdf",
-      "bibtex": "@inproceedings{trevisan2023icloud,\n  title={Measuring the Performance of i{C}loud Private Relay},\n  author={Trevisan, Martino and Drago, Idilio and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2023\n}"
+      "bibtex": "@inproceedings{trevisan2023icloud,\n  title={Measuring the Performance of i{C}loud Private Relay},\n  author={Trevisan, Martino and Drago, Idilio and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2023\n}",
+      "selected": false
     },
     {
       "title": "The Decoupling Principle: a Practical Privacy Framework",
@@ -86,7 +96,8 @@
       "venue": "ACM HotNets",
       "date": "November 2022",
       "pdf": "../docs/decoupling.pdf",
-      "bibtex": "@inproceedings{schmitt2022decoupling,\n  title={The Decoupling Principle: a Practical Privacy Framework},\n  author={Schmitt, Paul and Iyengar, Jana and Wood, Christopher and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2022\n}"
+      "bibtex": "@inproceedings{schmitt2022decoupling,\n  title={The Decoupling Principle: a Practical Privacy Framework},\n  author={Schmitt, Paul and Iyengar, Jana and Wood, Christopher and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2022\n}",
+      "selected": true
     },
     {
       "title": "Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic",
@@ -94,7 +105,8 @@
       "venue": "ACM SIGMETRICS",
       "date": "June 2022",
       "pdf": "../docs/beyond.pdf",
-      "bibtex": "@inproceedings{bronzino2022refinery,\n  title={Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic},\n  author={Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Kim, Hyojoon and Teixeira, Renata and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2022\n}"
+      "bibtex": "@inproceedings{bronzino2022refinery,\n  title={Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic},\n  author={Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Kim, Hyojoon and Teixeira, Renata and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2022\n}",
+      "selected": true
     },
     {
       "title": "New Directions in Automated Traffic Analysis",
@@ -102,7 +114,8 @@
       "venue": "ACM CCS",
       "date": "November 2021",
       "pdf": "../docs/nprint.pdf",
-      "bibtex": "@inproceedings{holland2021nprint,\n  title={New Directions in Automated Traffic Analysis},\n  author={Holland, Jordan and Schmitt, Paul and Feamster, Nick and Mittal, Prateek},\n  booktitle={Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (CCS)},\n  month=nov,\n  year=2021\n}"
+      "bibtex": "@inproceedings{holland2021nprint,\n  title={New Directions in Automated Traffic Analysis},\n  author={Holland, Jordan and Schmitt, Paul and Feamster, Nick and Mittal, Prateek},\n  booktitle={Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security (CCS)},\n  month=nov,\n  year=2021\n}",
+      "selected": true
     },
     {
       "title": "Designing for Tussle in Encrypted DNS",
@@ -110,7 +123,8 @@
       "venue": "ACM HotNets",
       "date": "November 2021",
       "pdf": "../docs/ddns.pdf",
-      "bibtex": "@inproceedings{hounsel2021ddns,\n  title={Designing for Tussle in Encrypted {DNS}},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2021\n}"
+      "bibtex": "@inproceedings{hounsel2021ddns,\n  title={Designing for Tussle in Encrypted {DNS}},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2021\n}",
+      "selected": true
     },
     {
       "title": "Pretty Good Phone Privacy",
@@ -118,7 +132,8 @@
       "venue": "USENIX Security Symposium",
       "date": "August 2021",
       "pdf": "../docs/pgpp.pdf",
-      "bibtex": "@inproceedings{schmitt2021pgpp,\n  title={Pretty Good Phone Privacy},\n  author={Schmitt, Paul and Raghavan, Barath},\n  booktitle={30th USENIX Security Symposium (USENIX Security 21)},\n  month=aug,\n  year=2021\n}"
+      "bibtex": "@inproceedings{schmitt2021pgpp,\n  title={Pretty Good Phone Privacy},\n  author={Schmitt, Paul and Raghavan, Barath},\n  booktitle={30th USENIX Security Symposium (USENIX Security 21)},\n  month=aug,\n  year=2021\n}",
+      "selected": true
     },
     {
       "title": "Encryption without Centralization: Distributing DNS Queries Across Recursive Resolvers",
@@ -126,7 +141,8 @@
       "venue": "ACM/IRTF Applied Networking Research Workshop (ANRW)",
       "date": "July 2021",
       "pdf": "../docs/anrw_ddns.pdf",
-      "bibtex": "@inproceedings{hounsel2021anrw,\n  title={Encryption without Centralization: Distributing {DNS} Queries Across Recursive Resolvers},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={ACM/IRTF Applied Networking Research Workshop (ANRW)},\n  month=jul,\n  year=2021\n}"
+      "bibtex": "@inproceedings{hounsel2021anrw,\n  title={Encryption without Centralization: Distributing {DNS} Queries Across Recursive Resolvers},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={ACM/IRTF Applied Networking Research Workshop (ANRW)},\n  month=jul,\n  year=2021\n}",
+      "selected": false
     },
     {
       "title": "Can Encrypted DNS Be Fast?",
@@ -134,7 +150,8 @@
       "venue": "Passive and Active Measurements Conference (PAM)",
       "date": "March 2021",
       "pdf": "../docs/fcc.pdf",
-      "bibtex": "@inproceedings{hounsel2021fast,\n  title={Can Encrypted {DNS} Be Fast?},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2021\n}"
+      "bibtex": "@inproceedings{hounsel2021fast,\n  title={Can Encrypted {DNS} Be Fast?},\n  author={Hounsel, Austin and Schmitt, Paul and Borgolte, Kevin and Feamster, Nick},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2021\n}",
+      "selected": false
     },
     {
       "title": "Characterizing Service Provider Response to the COVID-19 Pandemic in the United States",
@@ -142,7 +159,8 @@
       "venue": "Passive and Active Measurements Conference (PAM)",
       "date": "March 2021",
       "pdf": "../docs/covid.pdf",
-      "bibtex": "@inproceedings{liu2021covid,\n  title={Characterizing Service Provider Response to the {COVID}-19 Pandemic in the United States},\n  author={Liu, Shinan and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2021\n}"
+      "bibtex": "@inproceedings{liu2021covid,\n  title={Characterizing Service Provider Response to the {COVID}-19 Pandemic in the United States},\n  author={Liu, Shinan and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2021\n}",
+      "selected": false
     },
     {
       "title": "Mapping the Digital Divide: Before, During, and After COVID-19",
@@ -150,7 +168,8 @@
       "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
       "date": "February 2021",
       "pdf": "../docs/tprc_divide.pdf",
-      "bibtex": "@inproceedings{bronzino2021divide,\n  title={Mapping the Digital Divide: Before, During, and After {COVID}-19},\n  author={Bronzino, Francesco and Feamster, Nick and Liu, Shinan and Saxon, James and Schmitt, Paul},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=feb,\n  year=2021\n}"
+      "bibtex": "@inproceedings{bronzino2021divide,\n  title={Mapping the Digital Divide: Before, During, and After {COVID}-19},\n  author={Bronzino, Francesco and Feamster, Nick and Liu, Shinan and Saxon, James and Schmitt, Paul},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=feb,\n  year=2021\n}",
+      "selected": false
     },
     {
       "title": "Inferring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience",
@@ -158,7 +177,8 @@
       "venue": "ACM SIGMETRICS",
       "date": "June 2020",
       "pdf": "../docs/sigmetrics20.pdf",
-      "bibtex": "@inproceedings{bronzino2020video,\n  title={Inferring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience},\n  author={Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Martins, Guilherme and Teixeira, Renata and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2020\n}"
+      "bibtex": "@inproceedings{bronzino2020video,\n  title={Inferring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience},\n  author={Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Martins, Guilherme and Teixeira, Renata and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2020\n}",
+      "selected": true
     },
     {
       "title": "Comparing the Effects of DNS, DoT, and DoH on Web Performance",
@@ -166,7 +186,8 @@
       "venue": "The Web Conference (WWW)",
       "date": "April 2020",
       "pdf": "../docs/www2020-dns-dot-doh.pdf",
-      "bibtex": "@inproceedings{hounsel2020dns,\n  title={Comparing the Effects of {DNS}, {DoT}, and {DoH} on Web Performance},\n  author={Hounsel, Austin and Borgolte, Kevin and Schmitt, Paul and Holland, Jordan and Feamster, Nick},\n  booktitle={The Web Conference (WWW)},\n  month=apr,\n  year=2020\n}"
+      "bibtex": "@inproceedings{hounsel2020dns,\n  title={Comparing the Effects of {DNS}, {DoT}, and {DoH} on Web Performance},\n  author={Hounsel, Austin and Borgolte, Kevin and Schmitt, Paul and Holland, Jordan and Feamster, Nick},\n  booktitle={The Web Conference (WWW)},\n  month=apr,\n  year=2020\n}",
+      "selected": true
     },
     {
       "title": "How DNS over HTTPS is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem",
@@ -174,7 +195,8 @@
       "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
       "date": "September 2019",
       "pdf": "../docs/tprc2019-doh-policy.pdf",
-      "bibtex": "@inproceedings{borgolte2019doh,\n  title={How {DNS} over {HTTPS} is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem},\n  author={Borgolte, Kevin and Chattopadhyay, Tithi and Feamster, Nick and Kshirsagar, Mihir and Holland, Jordan and Hounsel, Austin and Schmitt, Paul},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2019\n}"
+      "bibtex": "@inproceedings{borgolte2019doh,\n  title={How {DNS} over {HTTPS} is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem},\n  author={Borgolte, Kevin and Chattopadhyay, Tithi and Feamster, Nick and Kshirsagar, Mihir and Holland, Jordan and Hounsel, Austin and Schmitt, Paul},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2019\n}",
+      "selected": false
     },
     {
       "title": "Oblivious DNS: Practical Privacy for DNS Queries",
@@ -182,7 +204,8 @@
       "venue": "Privacy Enhancing Technologies Symposium (PETS)",
       "date": "July 2019",
       "pdf": "../docs/odns.pdf",
-      "bibtex": "@inproceedings{schmitt2019odns,\n  title={Oblivious {DNS}: Practical Privacy for {DNS} Queries},\n  author={Schmitt, Paul and Edmundson, Anne and Mankin, Allison and Feamster, Nick},\n  booktitle={Privacy Enhancing Technologies Symposium (PETS)},\n  month=jul,\n  year=2019\n}"
+      "bibtex": "@inproceedings{schmitt2019odns,\n  title={Oblivious {DNS}: Practical Privacy for {DNS} Queries},\n  author={Schmitt, Paul and Edmundson, Anne and Mankin, Allison and Feamster, Nick},\n  booktitle={Privacy Enhancing Technologies Symposium (PETS)},\n  month=jul,\n  year=2019\n}",
+      "selected": true
     },
     {
       "title": "MPTCP Performance over Heterogenous Subpaths",
@@ -190,7 +213,8 @@
       "venue": "The International Conference on Computer Communications and Networks (ICCCN)",
       "date": "July 2019",
       "pdf": "../docs/mptcp.pdf",
-      "bibtex": "@inproceedings{adarsh2019mptcp,\n  title={{MPTCP} Performance over Heterogenous Subpaths},\n  author={Adarsh, Vivek and Schmitt, Paul and Belding, Elizabeth},\n  booktitle={The International Conference on Computer Communications and Networks (ICCCN)},\n  month=jul,\n  year=2019\n}"
+      "bibtex": "@inproceedings{adarsh2019mptcp,\n  title={{MPTCP} Performance over Heterogenous Subpaths},\n  author={Adarsh, Vivek and Schmitt, Paul and Belding, Elizabeth},\n  booktitle={The International Conference on Computer Communications and Networks (ICCCN)},\n  month=jul,\n  year=2019\n}",
+      "selected": false
     },
     {
       "title": "Third-Party Cellular Congestion Detection and Augmentation",
@@ -198,7 +222,8 @@
       "venue": "IEEE Transactions on Mobile Computing",
       "date": "January 2019",
       "pdf": "../docs/tmc2019.pdf",
-      "bibtex": "@article{schmitt2019congestion,\n  title={Third-Party Cellular Congestion Detection and Augmentation},\n  author={Schmitt, Paul and Iland, Daniel and Zheleva, Mariya and Belding, Elizabeth},\n  journal={IEEE Transactions on Mobile Computing},\n  month=jan,\n  year=2019\n}"
+      "bibtex": "@article{schmitt2019congestion,\n  title={Third-Party Cellular Congestion Detection and Augmentation},\n  author={Schmitt, Paul and Iland, Daniel and Zheleva, Mariya and Belding, Elizabeth},\n  journal={IEEE Transactions on Mobile Computing},\n  month=jan,\n  year=2019\n}",
+      "selected": false
     },
     {
       "title": "AirPress: High-accuracy Spectrum Summarization Using Compressed Scans",
@@ -206,7 +231,8 @@
       "venue": "IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)",
       "date": "October 2018",
       "pdf": "../docs/AirPRESS_DySPAN18.pdf",
-      "bibtex": "@inproceedings{zheleva2018airpress,\n  title={Air{PRESS}: High-accuracy Spectrum Summarization Using Compressed Scans},\n  author={Zheleva, Mariya and Larock, Timothy and Schmitt, Paul and Bogdanov, Petko},\n  booktitle={IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)},\n  month=oct,\n  year=2018\n}"
+      "bibtex": "@inproceedings{zheleva2018airpress,\n  title={Air{PRESS}: High-accuracy Spectrum Summarization Using Compressed Scans},\n  author={Zheleva, Mariya and Larock, Timothy and Schmitt, Paul and Bogdanov, Petko},\n  booktitle={IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN)},\n  month=oct,\n  year=2018\n}",
+      "selected": false
     },
     {
       "title": "Enhancing Transparency: Internet Video Quality Inference from Network Traffic",
@@ -214,7 +240,8 @@
       "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
       "date": "September 2018",
       "pdf": "../docs/TPRC_Net.pdf",
-      "bibtex": "@inproceedings{schmitt2018tprc,\n  title={Enhancing Transparency: Internet Video Quality Inference from Network Traffic},\n  author={Schmitt, Paul and Bronzino, Francesco and Teixeira, Renata and Chattopadhyay, Tithi and Feamster, Nick},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2018\n}"
+      "bibtex": "@inproceedings{schmitt2018tprc,\n  title={Enhancing Transparency: Internet Video Quality Inference from Network Traffic},\n  author={Schmitt, Paul and Bronzino, Francesco and Teixeira, Renata and Chattopadhyay, Tithi and Feamster, Nick},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2018\n}",
+      "selected": false
     },
     {
       "title": "A Cellular Network Radio Access Performance Measurement System: Results from a Ugandan Refugee Settlements Field Trial",
@@ -222,7 +249,8 @@
       "venue": "The Research Conference on Communications, Information and Internet Policy (TPRC)",
       "date": "September 2018",
       "pdf": "../docs/TPRC_Uganda.pdf",
-      "bibtex": "@inproceedings{maitland2018uganda,\n  title={A Cellular Network Radio Access Performance Measurement System: Results from a {U}gandan Refugee Settlements Field Trial},\n  author={Maitland, Carleen and Caneba, Richard and Schmitt, Paul and Koutsky, Tom},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2018\n}"
+      "bibtex": "@inproceedings{maitland2018uganda,\n  title={A Cellular Network Radio Access Performance Measurement System: Results from a {U}gandan Refugee Settlements Field Trial},\n  author={Maitland, Carleen and Caneba, Richard and Schmitt, Paul and Koutsky, Tom},\n  booktitle={The Research Conference on Communications, Information and Internet Policy (TPRC)},\n  month=sep,\n  year=2018\n}",
+      "selected": false
     },
     {
       "title": "Cellular and Internet Connectivity for Displaced Populations",
@@ -230,7 +258,8 @@
       "venue": "Chapter in 'Digital Lifeline? ICTs for Refugees and Displaced Persons', MIT Press",
       "date": "May 2018",
       "pdf": "https://mitpress.mit.edu/books/digital-lifeline",
-      "bibtex": "@inbook{schmitt2018displaced,\n  title={Cellular and Internet Connectivity for Displaced Populations},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Zheleva, Mariya},\n  booktitle={Digital Lifeline? {ICTs} for Refugees and Displaced Persons},\n  publisher={MIT Press},\n  month=may,\n  year=2018\n}"
+      "bibtex": "@inbook{schmitt2018displaced,\n  title={Cellular and Internet Connectivity for Displaced Populations},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Zheleva, Mariya},\n  booktitle={Digital Lifeline? {ICTs} for Refugees and Displaced Persons},\n  publisher={MIT Press},\n  month=may,\n  year=2018\n}",
+      "selected": false
     },
     {
       "title": "AirVIEW: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing",
@@ -238,7 +267,8 @@
       "venue": "IEEE Infocom",
       "date": "April 2018",
       "pdf": "../docs/infocom2018.pdf",
-      "bibtex": "@inproceedings{zheleva2018airview,\n  title={Air{VIEW}: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing},\n  author={Zheleva, Mariya and Bogdanov, Petko and Larock, Timothy and Schmitt, Paul},\n  booktitle={IEEE INFOCOM 2018 - IEEE Conference on Computer Communications},\n  month=apr,\n  year=2018\n}"
+      "bibtex": "@inproceedings{zheleva2018airview,\n  title={Air{VIEW}: Unsupervised Transmitter Detection for Next Generation Spectrum Sensing},\n  author={Zheleva, Mariya and Bogdanov, Petko and Larock, Timothy and Schmitt, Paul},\n  booktitle={IEEE INFOCOM 2018 - IEEE Conference on Computer Communications},\n  month=apr,\n  year=2018\n}",
+      "selected": true
     },
     {
       "title": "Low On Air: Inherent Wireless Channel Capacity Limitations",
@@ -246,15 +276,17 @@
       "venue": "Workshop on Computing within Limits (LIMITS)",
       "date": "June 2017",
       "pdf": "../docs/limits02-schmittA.pdf",
-      "bibtex": "@inproceedings{schmitt2017limits,\n  title={Low On Air: Inherent Wireless Channel Capacity Limitations},\n  author={Schmitt, Paul and Belding, Elizabeth},\n  booktitle={Workshop on Computing within Limits (LIMITS)},\n  month=jun,\n  year=2017\n}"
+      "bibtex": "@inproceedings{schmitt2017limits,\n  title={Low On Air: Inherent Wireless Channel Capacity Limitations},\n  author={Schmitt, Paul and Belding, Elizabeth},\n  booktitle={Workshop on Computing within Limits (LIMITS)},\n  month=jun,\n  year=2017\n}",
+      "selected": false
     },
     {
       "title": "Helping the Lone Operator in the Vast Frontier",
-      "authors": "Thomas Pötsch, Paul Schmitt, Jay Chen, Barath Raghavan",
+      "authors": "Thomas P\u00f6tsch, Paul Schmitt, Jay Chen, Barath Raghavan",
       "venue": "ACM Workshop on Hot Topics in Networks (HotNets)",
       "date": "November 2016",
       "pdf": "../docs/hotnets_planning.pdf",
-      "bibtex": "@inproceedings{potsch2016hotnets,\n  title={Helping the Lone Operator in the Vast Frontier},\n  author={P\\\"otsch, Thomas and Schmitt, Paul and Chen, Jay and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2016\n}"
+      "bibtex": "@inproceedings{potsch2016hotnets,\n  title={Helping the Lone Operator in the Vast Frontier},\n  author={P\\\"otsch, Thomas and Schmitt, Paul and Chen, Jay and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2016\n}",
+      "selected": true
     },
     {
       "title": "PhoneHome: Robust Extension of Cellular Coverage",
@@ -262,7 +294,8 @@
       "venue": "The International Conference on Computer Communications and Networks (ICCCN)",
       "date": "August 2016",
       "pdf": "../docs/icccn_phonehome.pdf",
-      "bibtex": "@inproceedings{schmitt2016phonehome,\n  title={{PhoneHome}: Robust Extension of Cellular Coverage},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Zheleva, Mariya},\n  booktitle={The International Conference on Computer Communications and Networks (ICCCN)},\n  month=aug,\n  year=2016\n}"
+      "bibtex": "@inproceedings{schmitt2016phonehome,\n  title={{PhoneHome}: Robust Extension of Cellular Coverage},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Zheleva, Mariya},\n  booktitle={The International Conference on Computer Communications and Networks (ICCCN)},\n  month=aug,\n  year=2016\n}",
+      "selected": false
     },
     {
       "title": "SmartCell: Small-Scale Mobile Congestion Awareness",
@@ -270,7 +303,8 @@
       "venue": "IEEE Communications Magazine",
       "date": "July 2016",
       "pdf": "../docs/commsmag_smartcell.pdf",
-      "bibtex": "@article{schmitt2016smartcell,\n  title={{SmartCell}: Small-Scale Mobile Congestion Awareness},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth},\n  journal={IEEE Communications Magazine},\n  month=jul,\n  year=2016\n}"
+      "bibtex": "@article{schmitt2016smartcell,\n  title={{SmartCell}: Small-Scale Mobile Congestion Awareness},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth},\n  journal={IEEE Communications Magazine},\n  month=jul,\n  year=2016\n}",
+      "selected": false
     },
     {
       "title": "Navigating Connectivity in Reduced Infrastructure Environments",
@@ -278,7 +312,8 @@
       "venue": "Workshop on Computing within Limits (LIMITS)",
       "date": "June 2016",
       "pdf": "../docs/limits_2016.pdf",
-      "bibtex": "@inproceedings{schmitt2016limits,\n  title={Navigating Connectivity in Reduced Infrastructure Environments},\n  author={Schmitt, Paul and Belding, Elizabeth},\n  booktitle={Workshop on Computing within Limits (LIMITS)},\n  month=jun,\n  year=2016\n}"
+      "bibtex": "@inproceedings{schmitt2016limits,\n  title={Navigating Connectivity in Reduced Infrastructure Environments},\n  author={Schmitt, Paul and Belding, Elizabeth},\n  booktitle={Workshop on Computing within Limits (LIMITS)},\n  month=jun,\n  year=2016\n}",
+      "selected": false
     },
     {
       "title": "Community-Level Access Divides: A Refugee Camp Case Study",
@@ -286,7 +321,8 @@
       "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
       "date": "June 2016",
       "pdf": "../docs/ictd16_communitydivides.pdf",
-      "bibtex": "@inproceedings{schmitt2016ictd,\n  title={Community-Level Access Divides: A Refugee Camp Case Study},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Tomaszewski, Brian and Xu, Ying and Maitland, Carleen},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=jun,\n  year=2016\n}"
+      "bibtex": "@inproceedings{schmitt2016ictd,\n  title={Community-Level Access Divides: A Refugee Camp Case Study},\n  author={Schmitt, Paul and Iland, Daniel and Belding, Elizabeth and Tomaszewski, Brian and Xu, Ying and Maitland, Carleen},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=jun,\n  year=2016\n}",
+      "selected": false
     },
     {
       "title": "HybridCell: Cellular connectivity on the fringes with demand-driven local cells",
@@ -294,7 +330,8 @@
       "venue": "IEEE Infocom",
       "date": "April 2016",
       "pdf": "../docs/hybridcell_infocom16.pdf",
-      "bibtex": "@inproceedings{schmitt2016hybrid,\n  title={{HybridCell}: Cellular Connectivity on the Fringes with Demand-Driven Local Cells},\n  author={Schmitt, Paul and Iland, Daniel and Zheleva, Mariya and Belding, Elizabeth},\n  booktitle={IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on Computer Communications},\n  month=apr,\n  year=2016\n}"
+      "bibtex": "@inproceedings{schmitt2016hybrid,\n  title={{HybridCell}: Cellular Connectivity on the Fringes with Demand-Driven Local Cells},\n  author={Schmitt, Paul and Iland, Daniel and Zheleva, Mariya and Belding, Elizabeth},\n  booktitle={IEEE INFOCOM 2016 - The 35th Annual IEEE International Conference on Computer Communications},\n  month=apr,\n  year=2016\n}",
+      "selected": true
     },
     {
       "title": "A Study of MVNO Data Paths and Performance",
@@ -302,7 +339,8 @@
       "venue": "Passive and Active Measurements Conference (PAM)",
       "date": "March 2016",
       "pdf": "../docs/pam16-mvno.pdf",
-      "bibtex": "@inproceedings{schmitt2016mvno,\n  title={A Study of {MVNO} Data Paths and Performance},\n  author={Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2016\n}"
+      "bibtex": "@inproceedings{schmitt2016mvno,\n  title={A Study of {MVNO} Data Paths and Performance},\n  author={Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={Passive and Active Measurements Conference (PAM)},\n  month=mar,\n  year=2016\n}",
+      "selected": false
     },
     {
       "title": "Internet Media Upload Caching for Poorly-Connected Regions",
@@ -310,7 +348,8 @@
       "venue": "ACM Symposium on Computing for Development (DEV)",
       "date": "December 2015",
       "pdf": "../docs/dev_villagecache.pdf",
-      "bibtex": "@inproceedings{schmitt2015cache,\n  title={Internet Media Upload Caching for Poorly-Connected Regions},\n  author={Schmitt, Paul and Raghavendra, Ramya and Belding, Elizabeth},\n  booktitle={ACM Symposium on Computing for Development (DEV)},\n  month=dec,\n  year=2015\n}"
+      "bibtex": "@inproceedings{schmitt2015cache,\n  title={Internet Media Upload Caching for Poorly-Connected Regions},\n  author={Schmitt, Paul and Raghavendra, Ramya and Belding, Elizabeth},\n  booktitle={ACM Symposium on Computing for Development (DEV)},\n  month=dec,\n  year=2015\n}",
+      "selected": false
     },
     {
       "title": "Internet Bandwidth Upgrade: Implications on Performance and Usage in Rural Zambia",
@@ -318,7 +357,8 @@
       "venue": "Information Technologies and International Development Journal (ITID), Vol 11, Issue 2",
       "date": "Summer 2015",
       "pdf": "../docs/itid-bandwidth.pdf",
-      "bibtex": "@article{zheleva2015bandwidth,\n  title={Internet Bandwidth Upgrade: Implications on Performance and Usage in Rural {Z}ambia},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  journal={Information Technologies and International Development Journal (ITID)},\n  volume={11},\n  issue={2},\n  year=2015\n}"
+      "bibtex": "@article{zheleva2015bandwidth,\n  title={Internet Bandwidth Upgrade: Implications on Performance and Usage in Rural {Z}ambia},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  journal={Information Technologies and International Development Journal (ITID)},\n  volume={11},\n  issue={2},\n  year=2015\n}",
+      "selected": false
     },
     {
       "title": "The Increased Bandwidth Fallacy: Performance and Usage in Rural Zambia",
@@ -326,15 +366,17 @@
       "venue": "ACM Symposium on Computing for Development (DEV)",
       "date": "December 2013",
       "pdf": "../docs/dev13-increased-bw-fallacy.pdf",
-      "bibtex": "@inproceedings{zheleva2013bandwidth,\n  title={The Increased Bandwidth Fallacy: Performance and Usage in Rural {Z}ambia},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={ACM Symposium on Computing for Development (DEV)},\n  month=dec,\n  year=2013\n}"
+      "bibtex": "@inproceedings{zheleva2013bandwidth,\n  title={The Increased Bandwidth Fallacy: Performance and Usage in Rural {Z}ambia},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={ACM Symposium on Computing for Development (DEV)},\n  month=dec,\n  year=2013\n}",
+      "selected": false
     },
     {
-      "title": "Bringing visibility to rural users in Côte d'Ivoire",
+      "title": "Bringing visibility to rural users in C\u00f4te d'Ivoire",
       "authors": "Mariya Zheleva, Paul Schmitt, Morgan Vigil, Elizabeth Belding",
       "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
       "date": "December 2013",
       "pdf": "../docs/ictd13-rural-cellular-users.pdf",
-      "bibtex": "@inproceedings{zheleva2013visibility,\n  title={Bringing Visibility to Rural Users in {C}\\\"ote d'Ivoire},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=dec,\n  year=2013\n}"
+      "bibtex": "@inproceedings{zheleva2013visibility,\n  title={Bringing Visibility to Rural Users in {C}\\\"ote d'Ivoire},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=dec,\n  year=2013\n}",
+      "selected": false
     },
     {
       "title": "Community detection in cellular network traces",
@@ -342,7 +384,8 @@
       "venue": "International Conference on Information and Communications Technology and Development (ICTD)",
       "date": "December 2013",
       "pdf": "../docs/ictd13-comm-detect.pdf",
-      "bibtex": "@inproceedings{zheleva2013community,\n  title={Community Detection in Cellular Network Traces},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=dec,\n  year=2013\n}"
+      "bibtex": "@inproceedings{zheleva2013community,\n  title={Community Detection in Cellular Network Traces},\n  author={Zheleva, Mariya and Schmitt, Paul and Vigil, Morgan and Belding, Elizabeth},\n  booktitle={International Conference on Information and Communications Technology and Development (ICTD)},\n  month=dec,\n  year=2013\n}",
+      "selected": false
     },
     {
       "title": "Communication flow patterns in the Orange Telecom D4D dataset",
@@ -350,7 +393,8 @@
       "venue": "Conference on the Analysis of Mobile Phone Datasets (NetMob)",
       "date": "May 2013",
       "pdf": "../docs/d4d_ucsb_updated.pdf",
-      "bibtex": "@inproceedings{schmitt2013d4d,\n  title={Communication Flow Patterns in the Orange Telecom {D4D} Dataset},\n  author={Schmitt, Paul and Vigil, Morgan and Zheleva, Mariya and Belding, Elizabeth},\n  booktitle={Conference on the Analysis of Mobile Phone Datasets (NetMob)},\n  month=may,\n  year=2013\n}"
+      "bibtex": "@inproceedings{schmitt2013d4d,\n  title={Communication Flow Patterns in the Orange Telecom {D4D} Dataset},\n  author={Schmitt, Paul and Vigil, Morgan and Zheleva, Mariya and Belding, Elizabeth},\n  booktitle={Conference on the Analysis of Mobile Phone Datasets (NetMob)},\n  month=may,\n  year=2013\n}",
+      "selected": false
     }
   ],
   "preprints": [
@@ -360,7 +404,8 @@
       "venue": "arXiv:2308.02202 [cs.CR]",
       "date": "August 2023",
       "pdf": "../docs/ghost.pdf",
-      "bibtex": "@article{mukherjee2023ghost,\n  title={The Ghost Trilemma},\n  author={Mukherjee, Sulagna and Ravi, Srivatsan and Schmitt, Paul and Raghavan, Barath},\n  journal={arXiv preprint arXiv:2308.02202},\n  year=2023\n}"
+      "bibtex": "@article{mukherjee2023ghost,\n  title={The Ghost Trilemma},\n  author={Mukherjee, Sulagna and Ravi, Srivatsan and Schmitt, Paul and Raghavan, Barath},\n  journal={arXiv preprint arXiv:2308.02202},\n  year=2023\n}",
+      "selected": false
     },
     {
       "title": "Internet Localization of Multi-Party Relay Users: Inherent Friction Between Internet Services and User Privacy",
@@ -368,7 +413,8 @@
       "venue": "arXiv:2307.04009 [cs.NI]",
       "date": "July 2023",
       "pdf": "../docs/pr-localization.pdf",
-      "bibtex": "@article{flynn2023localization,\n  title={Internet Localization of Multi-Party Relay Users: Inherent Friction Between Internet Services and User Privacy},\n  author={Flynn, Sean and Bronzino, Francesco and Schmitt, Paul},\n  journal={arXiv preprint arXiv:2307.04009},\n  year=2023\n}"
+      "bibtex": "@article{flynn2023localization,\n  title={Internet Localization of Multi-Party Relay Users: Inherent Friction Between Internet Services and User Privacy},\n  author={Flynn, Sean and Bronzino, Francesco and Schmitt, Paul},\n  journal={arXiv preprint arXiv:2307.04009},\n  year=2023\n}",
+      "selected": false
     },
     {
       "title": "Towards Reproducible Network Traffic Analysis",
@@ -376,14 +422,16 @@
       "venue": "arXiv:2203.12410 [cs.NI]",
       "date": "March 2022",
       "pdf": "../docs/pcapml.pdf",
-      "bibtex": "@article{holland2022reproducible,\n  title={Towards Reproducible Network Traffic Analysis},\n  author={Holland, Jordan and Schmitt, Paul and Mittal, Prateek and Feamster, Nick},\n  journal={arXiv preprint arXiv:2203.12410},\n  year=2022\n}"
+      "bibtex": "@article{holland2022reproducible,\n  title={Towards Reproducible Network Traffic Analysis},\n  author={Holland, Jordan and Schmitt, Paul and Mittal, Prateek and Feamster, Nick},\n  journal={arXiv preprint arXiv:2203.12410},\n  year=2022\n}",
+      "selected": false
     },
     {
       "title": "Enabling Personalized Video Quality Optimization",
       "authors": "Xu Zhang, Paul Schmitt, Marchini Chetty, Nick Feamster, Junchen Jiang",
       "venue": "Work in Submission",
       "date": "",
-      "bibtex": "@misc{zhang2024video,\n  title={Enabling Personalized Video Quality Optimization},\n  author={Zhang, Xu and Schmitt, Paul and Chetty, Marchini and Feamster, Nick and Jiang, Junchen},\n  year=2024,\n  note={Work in submission}\n}"
+      "bibtex": "@misc{zhang2024video,\n  title={Enabling Personalized Video Quality Optimization},\n  author={Zhang, Xu and Schmitt, Paul and Chetty, Marchini and Feamster, Nick and Jiang, Junchen},\n  year=2024,\n  note={Work in submission}\n}",
+      "selected": false
     }
   ]
 }
