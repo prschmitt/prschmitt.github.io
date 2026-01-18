@@ -96,6 +96,7 @@
             text-decoration: none;
             white-space: nowrap;
             letter-spacing: -0.3px;
+            cursor: pointer;
         }
 
         .nav-links {
@@ -105,16 +106,30 @@
             flex-wrap: wrap;
         }
 
-        .nav-links a {
+        .nav-links button {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+        }
+
+        .nav-links a,
+        .nav-links button {
             text-decoration: none;
             color: var(--text-secondary);
             font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.25s ease;
             white-space: nowrap;
+            cursor: pointer;
         }
 
-        .nav-links a:hover {
+        .nav-links a:hover,
+        .nav-links button:hover {
+            color: var(--accent);
+        }
+
+        .nav-links button.active {
             color: var(--accent);
         }
 
@@ -291,6 +306,11 @@
         section {
             margin-bottom: 4rem;
             scroll-margin-top: 120px;
+            display: none;
+        }
+
+        section.active {
+            display: block;
         }
 
         h2 {
@@ -472,7 +492,7 @@
         }
 
         .teaching-list li {
-            margin-bottom: 1.75rem;
+            margin-bottom: 2.5rem;
             padding-left: 0;
         }
 
@@ -482,7 +502,7 @@
 
         .teaching-list h3 {
             font-size: 0.95rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
             color: var(--primary);
             font-weight: 700;
             letter-spacing: -0.2px;
@@ -491,14 +511,32 @@
         .teaching-list .course {
             font-size: 0.9rem;
             color: var(--text);
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.5rem;
             font-weight: 500;
         }
 
         .teaching-list .institution {
+            font-size: 1.05rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .teaching-list .course-title {
             font-size: 0.85rem;
-            color: var(--text-secondary);
-            font-weight: 500;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.2px;
+        }
+
+        .teaching-list .terms {
+            margin-left: 0.5rem;
+        }
+
+        .teaching-list li:not(:last-child) {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2.5rem;
         }
 
         footer {
@@ -648,9 +686,9 @@
         <nav>
             <div style="flex: 1;"></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="publications.html">Bibliography</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
+                <li><button onclick="showSection('home')" id="nav-home">Home</button></li>
+                <li><button onclick="showSection('publications')" id="nav-publications">Bibliography</button></li>
+                <li><button onclick="showSection('teaching')" id="nav-teaching">Teaching</button></li>
                 <li><a href="../docs/cv.pdf">CV</a></li>
                 <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button></li>
             </ul>
@@ -658,33 +696,76 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>Paul Schmitt</h1>
-                <div class="title">Assistant Professor</div>
-                <div class="subtitle">Cal Poly - Computer Science & Software Engineering</div>
-                <div class="contact">
-                    <a href="mailto:prs@calpoly.edu">prs@calpoly.edu</a>
+        <section id="home" class="active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Paul Schmitt</h1>
+                    <div class="title">Assistant Professor</div>
+                    <div class="subtitle">Cal Poly - Computer Science & Software Engineering</div>
+                    <div class="contact">
+                        <a href="mailto:prs@calpoly.edu">prs@calpoly.edu</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="../docs/cv.pdf">CV</a> •
+                        <a href="https://scholar.google.com/citations?user=Ra-ZgD8AAAAJ&hl=en">Scholar</a>
+                    </div>
                 </div>
-                <div class="hero-links">
-                    <a href="../docs/cv.pdf">CV</a> •
-                    <a href="https://scholar.google.com/citations?user=Ra-ZgD8AAAAJ&hl=en">Scholar</a>
+                <div class="hero-image">
+                    <img src="../images/paul_profile_small.png" alt="Paul Schmitt">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="../images/paul_profile_small.png" alt="Paul Schmitt">
-            </div>
-        </section>
 
-        <section class="bio">
-            <p>I am an Assistant Professor in the <a href="https://csc.calpoly.edu">Computer Science and Software Engineering</a> department at Cal Poly, and a principal investigator at the <a href="http://icsi.berkeley.edu">International Computer Science Institute</a>. I previously worked at the <a href="https://www.isi.edu">Information Sciences Institute</a> and the <a href="https://citp.princeton.edu">Center for Information Technology Policy</a> (CITP) at Princeton University. I completed my Ph.D. as a member of the <a href="https://moment.cs.ucsb.edu/">MOMENT</a> lab at the University of California, Santa Barbara. I'm also co-founder and CEO of <a href="https://invisv.com">Invisv</a>.</p>
+            <section class="bio">
+                <p>I am an Assistant Professor in the <a href="https://csc.calpoly.edu">Computer Science and Software Engineering</a> department at Cal Poly, and a principal investigator at the <a href="http://icsi.berkeley.edu">International Computer Science Institute</a>. I previously worked at the <a href="https://www.isi.edu">Information Sciences Institute</a> and the <a href="https://citp.princeton.edu">Center for Information Technology Policy</a> (CITP) at Princeton University. I completed my Ph.D. as a member of the <a href="https://moment.cs.ucsb.edu/">MOMENT</a> lab at the University of California, Santa Barbara. I'm also co-founder and CEO of <a href="https://invisv.com">Invisv</a>.</p>
 
-            <p>I work to make the Internet better by designing and building networked systems that improve privacy, enhance performance, and provide insight into networks. My research is rooted in expertise in protocols and architectures that are used at massive scales and underpin modern connectivity. To create immediate impact, I seek to create "dirty-slate" solutions that explore fundamental principles while being rapidly deployable in operational networks.</p>
+                <p>I work to make the Internet better by designing and building networked systems that improve privacy, enhance performance, and provide insight into networks. My research is rooted in expertise in protocols and architectures that are used at massive scales and underpin modern connectivity. To create immediate impact, I seek to create "dirty-slate" solutions that explore fundamental principles while being rapidly deployable in operational networks.</p>
+            </section>
+
+            <section id="home-publications">
+                <h2>Selected Publications</h2>
+                <div id="home-publications-list"></div>
+            </section>
         </section>
 
         <section id="publications">
-            <h2>Selected Publications</h2>
+            <h2>Bibliography</h2>
             <div id="publications-list"></div>
+
+            <h2>Preprints & Work in Submission</h2>
+            <div id="preprints-list"></div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul class="teaching-list">
+                <li>
+                    <div class="institution">Cal Poly</div>
+                    <div class="course-title">CPE 464 - Computer Networks</div>
+                    <div class="terms">
+                        <div class="course">Fall 2025</div>
+                    </div>
+                    <div class="course-title">CSC 453 - Operating Systems</div>
+                    <div class="terms">
+                        <div class="course">Winter 2026</div>
+                        <div class="course">Spring 2025</div>
+                        <div class="course">Winter 2025</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="institution">University of Hawaiʻi at Mānoa</div>
+                    <div class="course-title">EE 449 - Computer Communication Networks</div>
+                    <div class="terms">
+                        <div class="course">Spring 2024</div>
+                        <div class="course">Spring 2023</div>
+                    </div>
+                    <div class="course-title">EE 693F - Privacy and Security in the Modern Internet</div>
+                    <div class="terms">
+                        <div class="course">Fall 2024</div>
+                        <div class="course">Fall 2023</div>
+                        <div class="course">Fall 2022</div>
+                    </div>
+                </li>
+            </ul>
         </section>
     </main>
 
@@ -733,18 +814,35 @@
             setTheme(isDark ? 'light' : 'dark');
         }
 
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('main > section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav buttons
+            document.querySelectorAll('.nav-links button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected section and mark nav button as active
+            document.getElementById(sectionId).classList.add('active');
+            document.getElementById('nav-' + sectionId).classList.add('active');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
         async function loadPublications() {
             try {
                 const response = await fetch('data.json');
                 const data = await response.json();
 
-                // Render only selected publications
-                const pubList = document.getElementById('publications-list');
+                // Render selected publications on home page
+                const homePubList = document.getElementById('home-publications-list');
                 data.publications.filter(pub => pub.selected).forEach(pub => {
                     const article = document.createElement('article');
                     article.className = 'publication';
-
-                    let titleHTML = pub.title;
 
                     let linksHTML = '';
                     if (pub.pdf) {
@@ -755,12 +853,58 @@
                     }
 
                     article.innerHTML = `
-                        <h3>${titleHTML}</h3>
+                        <h3>${pub.title}</h3>
+                        <div class="authors">${pub.authors}</div>
+                        <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
+                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
+                    `;
+                    homePubList.appendChild(article);
+                });
+
+                // Render all publications
+                const pubList = document.getElementById('publications-list');
+                data.publications.forEach(pub => {
+                    const article = document.createElement('article');
+                    article.className = 'publication';
+
+                    let linksHTML = '';
+                    if (pub.pdf) {
+                        linksHTML += `<a href="${pub.pdf}" class="pub-link">PDF</a>`;
+                    }
+                    if (pub.bibtex) {
+                        linksHTML += `<button class="bibtex-btn" data-bibtex="${pub.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                    }
+
+                    article.innerHTML = `
+                        <h3>${pub.title}</h3>
                         <div class="authors">${pub.authors}</div>
                         <div class="venue">${pub.venue}${pub.date ? ', ' + pub.date : ''}</div>
                         ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
                     `;
                     pubList.appendChild(article);
+                });
+
+                // Render all preprints
+                const preprintList = document.getElementById('preprints-list');
+                data.preprints.forEach(preprint => {
+                    const article = document.createElement('article');
+                    article.className = 'publication';
+
+                    let linksHTML = '';
+                    if (preprint.pdf) {
+                        linksHTML += `<a href="${preprint.pdf}" class="pub-link">PDF</a>`;
+                    }
+                    if (preprint.bibtex) {
+                        linksHTML += `<button class="bibtex-btn" data-bibtex="${preprint.bibtex.replace(/"/g, '&quot;')}" onclick="showBibtex(this)">BibTeX</button>`;
+                    }
+
+                    article.innerHTML = `
+                        <h3>${preprint.title}</h3>
+                        <div class="authors">${preprint.authors}</div>
+                        <div class="venue">${preprint.venue}${preprint.date ? ', ' + preprint.date : ''}</div>
+                        ${linksHTML ? `<div class="pub-links">${linksHTML}</div>` : ''}
+                    `;
+                    preprintList.appendChild(article);
                 });
             } catch (error) {
                 console.error('Error loading publications:', error);
@@ -815,6 +959,9 @@
                     closeBibtexModal();
                 }
             });
+
+            // Mark home button as active on load
+            document.getElementById('nav-home').classList.add('active');
         });
     </script>
 
