@@ -8,315 +8,19 @@
     <meta name="author" content="Paul Schmitt">
     <title>Teaching | Paul Schmitt</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #0f1419;
-            --secondary: #ffffff;
-            --accent: #2563eb;
-            --text: #1f2937;
-            --text-secondary: #6b7280;
-            --light-bg: #f9fafb;
-            --border: #e5e7eb;
-            --spacing: 1rem;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --primary: #f3f4f6;
-                --secondary: #111827;
-                --accent: #60a5fa;
-                --text: #f3f4f6;
-                --text-secondary: #d1d5db;
-                --light-bg: #1f2937;
-                --border: #374151;
-            }
-        }
-
-        html.dark-mode {
-            --primary: #f3f4f6;
-            --secondary: #111827;
-            --accent: #60a5fa;
-            --text: #f3f4f6;
-            --text-secondary: #d1d5db;
-            --light-bg: #1f2937;
-            --border: #374151;
-        }
-
-        html.light-mode {
-            --primary: #0f1419;
-            --secondary: #ffffff;
-            --accent: #2563eb;
-            --text: #1f2937;
-            --text-secondary: #6b7280;
-            --light-bg: #f9fafb;
-            --border: #e5e7eb;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.65;
-            color: var(--text);
-            background: var(--secondary);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            scroll-behavior: smooth;
-            scroll-padding-top: 120px;
-        }
-
-        header {
-            border-bottom: 1px solid var(--border);
-            position: sticky;
-            top: 0;
-            background: var(--secondary);
-            z-index: 100;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        }
-
-        nav {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1.2rem 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary);
-            text-decoration: none;
-            white-space: nowrap;
-            letter-spacing: -0.3px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.25s ease;
-            white-space: nowrap;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .theme-toggle {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            transition: color 0.25s ease, transform 0.25s ease;
-            width: 28px;
-            height: 28px;
-        }
-
-        .theme-toggle:hover {
-            color: var(--accent);
-        }
-
-        .theme-toggle:active {
-            transform: scale(0.95);
-        }
-
-        .theme-icon {
-            width: 18px;
-            height: 18px;
-            stroke: currentColor;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3.5rem 1rem;
-        }
-
-        section {
-            margin-bottom: 4rem;
-            scroll-margin-top: 120px;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.75rem;
-            font-weight: 400;
-            letter-spacing: -0.3px;
-            font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .teaching-list {
-            list-style: none;
-        }
-
-        .teaching-list li {
-            margin-bottom: 2.5rem;
-            padding-left: 0;
-        }
-
-        .teaching-list li:last-child {
-            margin-bottom: 0;
-        }
-
-        .teaching-list h3 {
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-            font-weight: 700;
-            letter-spacing: -0.2px;
-        }
-
-        .teaching-list .course {
-            font-size: 0.9rem;
-            color: var(--text);
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        }
-
-        .teaching-list .course a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .teaching-list .course a:hover {
-            text-decoration: underline;
-        }
-
-        .teaching-list .institution {
-            font-size: 1.05rem;
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-        }
-
-        .teaching-list .course-title {
-            font-size: 0.85rem;
-            color: var(--primary);
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.2px;
-        }
-
-        .teaching-list .terms {
-            margin-left: 0.5rem;
-        }
-
-        .teaching-list li:not(:last-child) {
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2.5rem;
-        }
-
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 2.5rem 1rem;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-            margin-top: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                padding: 1rem;
-            }
-
-            .logo {
-                font-size: 1rem;
-            }
-
-            .nav-links {
-                gap: 1.5rem;
-                font-size: 0.85rem;
-            }
-
-            main {
-                padding: 2rem 1rem;
-            }
-
-            h2 {
-                font-size: 1.2rem;
-                margin-bottom: 1.5rem;
-            }
-
-            section {
-                margin-bottom: 3rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            nav {
-                padding: 0.75rem 1rem;
-            }
-
-            .logo {
-                font-size: 0.95rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-                font-size: 0.8rem;
-            }
-
-            main {
-                padding: 1.5rem 1rem;
-            }
-
-            h2 {
-                font-size: 1.05rem;
-                margin-bottom: 1.25rem;
-            }
-
-            section {
-                margin-bottom: 2.25rem;
-            }
-
-            .teaching-list li {
-                margin-bottom: 1.25rem;
-            }
-
-            .teaching-list .course {
-                font-size: 0.85rem;
-            }
-
-            .teaching-list .institution {
-                font-size: 0.8rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div style="flex: 1;"></div>
+            <a href="index.html" class="logo">Paul Schmitt</a>
+            <div class="spacer"></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="publications.html">Bibliography</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
                 <li><a href="../docs/cv.pdf">CV</a></li>
-                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button></li>
+                <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"></button></li>
             </ul>
         </nav>
     </header>
@@ -361,51 +65,46 @@
     </footer>
 
     <script>
-        // Theme management
-        function initTheme() {
-            const html = document.documentElement;
-            const toggle = document.getElementById('theme-toggle');
+        const THEME = {
+            DARK: 'dark',
+            LIGHT: 'light',
+            STORAGE_KEY: 'theme',
+            SUN_ICON: '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
+            MOON_ICON: '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+        };
 
-            // Check for saved preference, system preference, or default to light
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        const ThemeManager = {
+            init() {
+                const toggle = document.getElementById('theme-toggle');
+                const savedTheme = localStorage.getItem(THEME.STORAGE_KEY);
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const theme = savedTheme || (prefersDark ? THEME.DARK : THEME.LIGHT);
 
-            setTheme(theme);
-        }
+                this.set(theme);
+                toggle.addEventListener('click', () => this.toggle());
+            },
 
-        function setTheme(theme) {
-            const html = document.documentElement;
-            const toggle = document.getElementById('theme-toggle');
-            const sunIcon = '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
-            const moonIcon = '<svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+            set(theme) {
+                const html = document.documentElement;
+                const toggle = document.getElementById('theme-toggle');
+                const isDark = theme === THEME.DARK;
 
-            if (theme === 'dark') {
-                html.classList.add('dark-mode');
-                html.classList.remove('light-mode');
-                toggle.innerHTML = moonIcon;
-                toggle.setAttribute('aria-label', 'Switch to light mode');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                html.classList.add('light-mode');
-                html.classList.remove('dark-mode');
-                toggle.innerHTML = sunIcon;
-                toggle.setAttribute('aria-label', 'Switch to dark mode');
-                localStorage.setItem('theme', 'light');
+                html.classList.toggle('dark-mode', isDark);
+                html.classList.toggle('light-mode', !isDark);
+                toggle.innerHTML = isDark ? THEME.MOON_ICON : THEME.SUN_ICON;
+                toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+                localStorage.setItem(THEME.STORAGE_KEY, theme);
+            },
+
+            toggle() {
+                const html = document.documentElement;
+                const isDark = html.classList.contains('dark-mode');
+                this.set(isDark ? THEME.LIGHT : THEME.DARK);
             }
-        }
-
-        function toggleTheme() {
-            const html = document.documentElement;
-            const isDark = html.classList.contains('dark-mode');
-            setTheme(isDark ? 'light' : 'dark');
-        }
+        };
 
         document.addEventListener('DOMContentLoaded', () => {
-            initTheme();
-
-            // Add theme toggle listener
-            document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+            ThemeManager.init();
         });
     </script>
 </body>
