@@ -25,7 +25,7 @@
       "date": "December 2025",
       "pdf": "./docs/conext25.pdf",
       "bibtex": "@article{10.1145/3768992,\n  author = {Jiang, Xi and Liu, Shinan and Naama, Saloua and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  title = {JITI: Dynamic Model Serving for Just-in-Time Traffic Inference},\n  year = {2025},\n  issue_date = {December 2025},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  volume = {3},\n  number = {CoNEXT4},\n  url = {https://doi.org/10.1145/3768992},\n  doi = {10.1145/3768992},\n  journal = {Proc. ACM Netw.},\n  month = nov,\n  articleno = {45},\n  numpages = {24},\n  keywords = {network application inference, online classification, traffic inference}\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Rethinking Geolocalization on the Internet",
@@ -34,7 +34,7 @@
       "date": "November 2025",
       "pdf": "./docs/hotnets25.pdf",
       "bibtex": "@inproceedings{laouar2025geo,\n  title={Rethinking Geolocalization on the Internet},\n  author={Laouar, Augustin and Desgeorges, Lo\\\"ic and Schmitt, Paul and Bronzino, Francesco},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2025\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Beyond Data Points: Regionalizing Crowdsourced Latency Measurements",
@@ -43,7 +43,7 @@
       "date": "June 2025",
       "pdf": "./docs/sigmetrics25_beyond.pdf",
       "bibtex": "@inproceedings{sharma2025beyond,\n  title={Beyond Data Points: Regionalizing Crowdsourced Latency Measurements},\n  author={Sharma, Taveesh and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick and Marwell, Nicole},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2025\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "The Cost of Packet Loss on ML-Based Traffic Analysis",
@@ -79,7 +79,7 @@
       "date": "September 2023",
       "pdf": "./docs/leaf.pdf",
       "bibtex": "@article{10.1145/3609422,\n  author = {Liu, Shinan and Bronzino, Francesco and Schmitt, Paul and Bhagoji, Arjun Nitin and Feamster, Nick and Crespo, Hector Garcia and Coyle, Timothy and Ward, Brian},\n  title = {LEAF: Navigating Concept Drift in Cellular Networks},\n  year = {2023},\n  issue_date = {September 2023},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  volume = {1},\n  number = {CoNEXT2},\n  url = {https://doi.org/10.1145/3609422},\n  doi = {10.1145/3609422},\n  journal = {Proc. ACM Netw.},\n  month = sep,\n  articleno = {7},\n  numpages = {24},\n  keywords = {cellular network, concept drift, explanation, mitigation, regression}\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Generative, High-Fidelity Network Traces",
