@@ -1,6 +1,14 @@
 {
   "publications": [
     {
+      "title": " Understanding Privacy and Quality Tradeoffs in Synthetic Network Data",
+      "authors": "Andrew Chu, Kyle MacMillan, Paul Schmitt, Nick Feamster",
+      "venue": "Privacy Enhancing Technologies Symposium (PETS)",
+      "date": "July 2026",
+      "bibtex": "@article{chu2026pets,\n  title={ Understanding Privacy and Quality Tradeoffs in Synthetic Network Data},\n  author={Chu, Andrew and MacMillan, Kyle and Schmitt, Paul and Feamster, Nick},\n  journal={Proceedings on Privacy Enhancing Technologies 2026},\n  number={3},\n  year={2026}\n}\n",
+      "selected": true
+    },
+    {
       "title": "NetSSM: Multi-Flow and State-Aware Network Trace Generation using State Space Models",
       "authors": "Andrew Chu, Xi Jiang, Shinan Liu, Arjun Bhagoji, Francesco Bronzino, Paul Schmitt, Nick Feamster",
       "venue": "Proc. of the ACM on Networking (PACMNET), CoNEXT",
