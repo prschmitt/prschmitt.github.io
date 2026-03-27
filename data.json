@@ -14,7 +14,7 @@
       "venue": "Proc. of the ACM on Networking (PACMNET), CoNEXT",
       "date": "June 2026",
       "bibtex": "@inproceedings{chu2026ssm,\n  title={NetSSM: Multi-Flow and State-Aware Network Trace Generation using State Space Models},\n  author={Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={Proc. of the ACM on Networking (PACMNET), CoNEXT},\n  month=jun,\n  year=2026\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions",
