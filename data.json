@@ -5,14 +5,34 @@
       "authors": "Andrew Chu, Kyle MacMillan, Paul Schmitt, Nick Feamster",
       "venue": "Privacy Enhancing Technologies Symposium (PETS)",
       "date": "July 2026",
+      "pdf": "./docs/privacy_quality.pdf",
       "bibtex": "@article{chu2026pets,\n  title={ Understanding Privacy and Quality Tradeoffs in Synthetic Network Data},\n  author={Chu, Andrew and MacMillan, Kyle and Schmitt, Paul and Feamster, Nick},\n  journal={Proceedings on Privacy Enhancing Technologies 2026},\n  number={3},\n  year={2026}\n}\n",
       "selected": true
+    },
+    {
+      "title": "Unequal Cover: Measuring Privacy Disparities in Proxy Infrastructure",
+      "authors": "Jess Alencaster, Rishan Baweja, Leticia Leon-Rodriguez, Paul Schmitt",
+      "venue": "Applied Networking Research Workshop (ANRW)",
+      "date": "July 2026",
+      "pdf": "./docs/unequal_cover.pdf",
+      "bibtex": "@inproceedings{10.1145/3822163.3827922,\n author = {Alencaster, Jess and Baweja, Rishan and Leon-Rodriguez, Leticia and Schmitt, Paul},\n title = {Unequal Cover: Measuring Privacy Disparities in Proxy Infrastructure},\n year = {2026},\n doi = {10.1145/3822163.3827922},\n booktitle = {Proceedings of the 2026 Applied Networking Research Workshop},\n location = {Vienna, Austria},\n series = {ANRW '26}\n}\n",
+      "selected": true
+    },
+    {
+      "title": "pcapML: Making Network Traffic Datasets Reproducible",
+      "authors": "Jordan Holland, Jess Alencaster, Nick Feamster, Paul Schmitt",
+      "venue": "Applied Networking Research Workshop (ANRW)",
+      "date": "July 2026",
+      "pdf": "./docs/pcapml.pdf",
+      "bibtex": "@inproceedings{10.1145/3822163.3827923,\n author = {Holland, Jordan and Alencaster, Jess and Feamster, Nick and Schmitt, Paul},\n title = {pcapML: Making Network Traffic Datasets Reproducible},\n year = {2026},\n doi = {10.1145/3822163.3827923},\n booktitle = {Proceedings of the 2026 Applied Networking Research Workshop},\n location = {Vienna, Austria},\n series = {ANRW '26}\n}\n",
+      "selected": false
     },
     {
       "title": "Less is More: Optimizing Probe Selection Using Shared Latency Anomalies",
       "authors": "Taveesh Sharma, Andrew Chu, Paul Schmitt, Francesco Bronzino, Nicole Marwell, Nick Feamster",
       "venue": "Proc. of the ACM on Networking (PACMNET), CoNEXT",
       "date": "June 2026",
+      "pdf": "./docs/less_more.pdf",
       "bibtex": "@inproceedings{chu2026ssm,\n  title={NetSSM: Multi-Flow and State-Aware Network Trace Generation using State Space Models},\n  author={Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={Proc. of the ACM on Networking (PACMNET), CoNEXT},\n  month=jun,\n  year=2026\n}\n",
       "selected": false
     },
@@ -21,6 +41,7 @@
       "authors": "Johann Hugon, Shinan Liu, Paul Schmitt, Nick Feamster, Francesco Bronzino",
       "venue": "IEEE International Conference on Network Softwarization (NetSoft)",
       "date": "June 2026",
+      "pdf": "./docs/lofi.pdf",
       "bibtex": "@inproceedings{hugon2026netsoft,\n  title={LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions},\n  author={Hugon, Johann and Liu, Shinan and Schmitt, Paul and Feamster, Nick and Bronzino, Francesco},\n  booktitle={IEEE International Conference on Network Softwarization (NetSoft)},\n  month=jun,\n  year=2026\n}\n",
       "selected": false
     },
@@ -447,15 +468,6 @@
       "date": "July 2023",
       "pdf": "./docs/pr-localization.pdf",
       "bibtex": "@misc{flynn2023internetlocalizationmultipartyrelay,\n  title={Internet Localization of Multi-Party Relay Users: Inherent Friction Between Internet Services and User Privacy},\n  author={Sean Flynn and Francesco Bronzino and Paul Schmitt},\n  year={2023},\n  eprint={2307.04009},\n  archivePrefix={arXiv},\n  primaryClass={cs.NI},\n  url={https://arxiv.org/abs/2307.04009},\n}\n",
-      "selected": false
-    },
-    {
-      "title": "Towards Reproducible Network Traffic Analysis",
-      "authors": "Jordan Holland, Paul Schmitt, Prateek Mittal, Nick Feamster",
-      "venue": "arXiv:2203.12410 [cs.NI]",
-      "date": "March 2022",
-      "pdf": "./docs/pcapml.pdf",
-      "bibtex": "@misc{holland2022reproduciblenetworktrafficanalysis,\n  title={Towards Reproducible Network Traffic Analysis},\n  author={Jordan Holland and Paul Schmitt and Prateek Mittal and Nick Feamster},\n  year={2022},\n  eprint={2203.12410},\n  archivePrefix={arXiv},\n  primaryClass={cs.NI},\n  url={https://arxiv.org/abs/2203.12410},\n}\n",
       "selected": false
     },
     {
