@@ -34,7 +34,7 @@
       "date": "June 2026",
       "pdf": "./docs/less_more.pdf",
       "bibtex": "@inproceedings{chu2026ssm,\n  title={NetSSM: Multi-Flow and State-Aware Network Trace Generation using State Space Models},\n  author={Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick},\n  booktitle={Proc. of the ACM on Networking (PACMNET), CoNEXT},\n  month=jun,\n  year=2026\n}\n",
-      "selected": false
+      "selected": true
     },
     {
       "title": "LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions",
@@ -151,7 +151,7 @@
       "date": "November 2022",
       "pdf": "./docs/decoupling.pdf",
       "bibtex": "@inproceedings{schmitt2022decoupling,\n  title={The Decoupling Principle: a Practical Privacy Framework},\n  author={Schmitt, Paul and Iyengar, Jana and Wood, Christopher and Raghavan, Barath},\n  booktitle={ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)},\n  month=nov,\n  year=2022\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic",
@@ -160,7 +160,7 @@
       "date": "June 2022",
       "pdf": "./docs/beyond.pdf",
       "bibtex": "@inproceedings{bronzino2022refinery,\n  title={Traffic Refinery: Cost-Aware Data Representation for Machine Learning on Network Traffic},\n  author={Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Kim, Hyojoon and Teixeira, Renata and Feamster, Nick},\n  booktitle={Proc. of the ACM on Measurement and Analysis of Computing Systems (SIGMETRICS)},\n  month=jun,\n  year=2022\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "New Directions in Automated Traffic Analysis",
@@ -232,7 +232,7 @@
       "date": "June 2020",
       "pdf": "./docs/sigmetrics20.pdf",
       "bibtex": "@article{10.1145/3410048.3410064,\n  author = {Bronzino, Francesco and Schmitt, Paul and Ayoubi, Sara and Martins, Guilherme and Teixeira, Renata and Feamster, Nick},\n  title = {Inferring Streaming Video Quality from Encrypted Traffic: Practical Models and Deployment Experience},\n  year = {2020},\n  issue_date = {June 2020},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  volume = {48},\n  number = {1},\n  issn = {0163-5999},\n  url = {https://doi.org/10.1145/3410048.3410064},\n  doi = {10.1145/3410048.3410064},\n  month = jul,\n  pages = {27-28},\n  numpages = {2},\n  keywords = {dash, encrypted traffic, network measurements, quality inference}\n}\n",
-      "selected": true
+      "selected": false
     },
     {
       "title": "Comparing the Effects of DNS, DoT, and DoH on Web Performance",
